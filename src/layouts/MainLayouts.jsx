@@ -5,7 +5,9 @@ const MainLayouts = () => {
   return (
     <div>
       <Home></Home>
-      <Outlet></Outlet>
+      <main className="max-w-7xl mx-auto">
+        <Outlet></Outlet>
+      </main>
     </div>
   );
 };
