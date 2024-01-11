@@ -50,7 +50,7 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="navbar-end">
-            <Link to="signUp">
+            <Link to="/signUp">
               <button className="btn btn-sm md:btn bg-yellow md:bg-yellow text-base-100 md:text-base-100">
                 Register
               </button>
