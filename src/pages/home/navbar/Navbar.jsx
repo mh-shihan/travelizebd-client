@@ -50,9 +50,11 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="navbar-end">
-            <a className="btn btn-sm md:btn bg-yellow md:bg-yellow text-base-100 md:text-base-100">
-              Register
-            </a>
+            <Link to="signUp">
+              <button className="btn btn-sm md:btn bg-yellow md:bg-yellow text-base-100 md:text-base-100">
+                Register
+              </button>
+            </Link>
           </div>
         </div>
       </div>
