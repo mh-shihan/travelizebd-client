@@ -1,7 +1,11 @@
 import { Link } from "react-router-dom";
 import logo from "../../../assets/logo/logo.png";
 import NavLinks from "./NavLinks";
+import useAuth from "../../../hooks/useAuth";
+
 const Navbar = () => {
+  const { user } = useAuth();
+
   return (
     <div className="bg-base-200 py-3">
       <div className=" max-w-7xl mx-auto">
@@ -50,11 +54,19 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="navbar-end">
-            <Link to="/signUp">
-              <button className="btn btn-sm md:btn bg-yellow md:bg-yellow text-base-100 md:text-base-100">
-                Register
-              </button>
-            </Link>
+            {user?.email ? (
+              <Link to="/signUp">
+                <button className="btn btn-sm md:btn bg-yellow md:bg-yellow hover:bg-orange-500 text-base-100 md:text-base-100">
+                  Register
+                </button>
+              </Link>
+            ) : (
+              <Link to="/login">
+                <button className="btn btn-sm md:btn bg-yellow md:bg-yellow hover:bg-orange-500 text-base-100 md:text-base-100">
+                  Login
+                </button>
+              </Link>
+            )}
           </div>
         </div>
       </div>

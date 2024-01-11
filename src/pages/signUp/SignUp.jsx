@@ -32,7 +32,7 @@ const SignUp = () => {
             timer: 1500,
           });
           reset();
-          //   navigate("/login");
+          navigate("/login");
         }
       })
       .catch((error) => {
@@ -115,9 +115,7 @@ const SignUp = () => {
             <Link to="/login">
               <p className="block mt-4 font-sans text-base antialiased font-normal leading-relaxed text-center text-gray-700">
                 Already have an account?
-                <a href="#" className="font-medium text-gray-900">
-                  Register
-                </a>
+                <a className="font-medium text-gray-900">Login</a>
               </p>
             </Link>
           </form>

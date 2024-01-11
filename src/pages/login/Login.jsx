@@ -1,20 +1,38 @@
 import Lottie from "lottie-react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import loginAnimation from "../../assets/animation/login-animation.json";
 import { useForm } from "react-hook-form";
 import useAuth from "../../hooks/useAuth";
+import Swal from "sweetalert2";
 
 const Login = () => {
   const [errorMessage, setErrorMessage] = useState("");
   const { signIn } = useAuth();
+  const navigate = useNavigate();
 
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
     const email = data?.email;
     const password = data?.password;
 
-    console.log(email, password);
+    signIn(email, password)
+      .then((res) => {
+        if (res?.user) {
+          Swal.fire({
+            icon: "success",
+            title: "Login Successful",
+            showConfirmButton: false,
+            timer: 1500,
+          });
+          reset();
+          navigate("/");
+        }
+      })
+      .catch((error) => {
+        const err = error.message;
+        setErrorMessage(err);
+      });
   };
 
   return (
@@ -59,15 +77,13 @@ const Login = () => {
               />
             </div>
             <div className="form-control mt-6">
-              <button className="btn btn-outline  ">Login</button>
+              <button className="btn btn-outline text-2xl">Login</button>
             </div>
             {errorMessage && <p className="text-red-600">{errorMessage}</p>}
-            <Link to="/login">
+            <Link to="/signUp">
               <p className="block mt-4 font-sans text-base antialiased font-normal leading-relaxed text-center text-gray-700">
-                Already have an account?
-                <a href="#" className="font-medium text-gray-900">
-                  Login
-                </a>
+                New to this site?
+                <a className="font-medium text-gray-900">Register</a>
               </p>
             </Link>
           </form>
