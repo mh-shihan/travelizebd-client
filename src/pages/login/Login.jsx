@@ -5,6 +5,7 @@ import loginAnimation from "../../assets/animation/login-animation.json";
 import { useForm } from "react-hook-form";
 import useAuth from "../../hooks/useAuth";
 import Swal from "sweetalert2";
+import SocialLogin from "../../shared/socialLogin/SocialLogin";
 
 const Login = () => {
   const [errorMessage, setErrorMessage] = useState("");
@@ -80,13 +81,14 @@ const Login = () => {
               <button className="btn btn-outline text-2xl">Login</button>
             </div>
             {errorMessage && <p className="text-red-600">{errorMessage}</p>}
-            <Link to="/signUp">
-              <p className="block mt-4 font-sans text-base antialiased font-normal leading-relaxed text-center text-gray-700">
-                New to this site?
+            <p className="block mt-2 font-sans text-base antialiased font-normal leading-relaxed text-center text-gray-700">
+              New to this site?
+              <Link to="/signUp">
                 <a className="font-medium text-gray-900">Register</a>
-              </p>
-            </Link>
+              </Link>
+            </p>
           </form>
+          <SocialLogin></SocialLogin>
         </div>
       </div>
     </div>

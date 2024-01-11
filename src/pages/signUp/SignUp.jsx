@@ -5,6 +5,7 @@ import { useState } from "react";
 import Swal from "sweetalert2";
 import signUpAnimation from "../../assets/animation/signup-animation.json";
 import Lottie from "lottie-react";
+import SocialLogin from "../../shared/socialLogin/SocialLogin";
 
 const SignUp = () => {
   const [errorMessage, setErrorMessage] = useState("");
@@ -112,13 +113,17 @@ const SignUp = () => {
               </button>
             </div>
             {errorMessage && <p className="text-red-600">{errorMessage}</p>}
-            <Link to="/login">
-              <p className="block mt-4 font-sans text-base antialiased font-normal leading-relaxed text-center text-gray-700">
-                Already have an account?
+
+            <p className="block mt-2 font-sans text-base antialiased font-normal leading-relaxed text-center text-gray-700">
+              Already have an account?
+              <Link to="/login">
                 <a className="font-medium text-gray-900">Login</a>
-              </p>
-            </Link>
+              </Link>
+            </p>
           </form>
+          <div className="form-control">
+            <SocialLogin></SocialLogin>
+          </div>
         </div>
       </div>
     </div>
