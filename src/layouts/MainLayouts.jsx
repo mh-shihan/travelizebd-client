@@ -3,9 +3,7 @@ import Home from "../pages/home/home/Home";
 const MainLayouts = () => {
   return (
     <div>
-      <header>
-        <Home></Home>
-      </header>
+      <Home></Home>
     </div>
   );
 };
