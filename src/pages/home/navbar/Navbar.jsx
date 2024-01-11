@@ -1,10 +1,49 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "../../../assets/logo/logo.png";
 import NavLinks from "./NavLinks";
 import useAuth from "../../../hooks/useAuth";
+import { CiLogout } from "react-icons/ci";
 
 const Navbar = () => {
-  const { user } = useAuth();
+  const { user, logout } = useAuth();
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    logout().then(() => {
+      navigate("/");
+    });
+  };
+
+  const profile = (
+    <div className="dropdown dropdown-bottom dropdown-end">
+      <div tabIndex={0} role="button" className=" m-1">
+        {user && (
+          <img src={user?.photoURL} className="w-12 h-12 rounded-full"></img>
+        )}
+      </div>
+      <ul
+        tabIndex={0}
+        className="dropdown-content z-[1] menu p-4 shadow bg-base-100 rounded-box font-medium "
+      >
+        <li>{user?.displayName}</li>
+        <hr className="my-2" />
+        <li>{user?.email}</li>
+        <hr className="mt-2" />
+        <li>
+          <button className="hover:bg-transparent">Dashboard</button>
+        </li>
+        <hr />
+        <li>
+          <button onClick={handleLogout} className="hover:bg-transparent">
+            Logout
+            <span className="text-lg font-medium">
+              <CiLogout />
+            </span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  );
 
   return (
     <div className="bg-base-200 py-3">
@@ -67,6 +106,7 @@ const Navbar = () => {
                 </button>
               </Link>
             )}
+            <>{profile}</>
           </div>
         </div>
       </div>
