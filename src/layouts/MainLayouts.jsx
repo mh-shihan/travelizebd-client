@@ -1,5 +1,4 @@
 import { Outlet, useLocation } from "react-router-dom";
-import Home from "../pages/home/home/Home";
 import Navbar from "../pages/home/navbar/Navbar";
 
 const MainLayouts = () => {
@@ -13,11 +12,10 @@ const MainLayouts = () => {
       {!noHeaderFooter && (
         <>
           <Navbar></Navbar>
-          <Home></Home>
         </>
       )}
 
-      <div className="max-w-7xl mx-auto px-1">
+      <div className="">
         <Outlet></Outlet>
       </div>
     </div>

@@ -30,11 +30,16 @@ const Navbar = () => {
         <li>{user?.email}</li>
         <hr className="mt-2" />
         <li>
-          <button className="hover:bg-transparent">Dashboard</button>
+          <button className="hover:bg-transparent hover:text-yellow ">
+            Dashboard
+          </button>
         </li>
         <hr />
         <li>
-          <button onClick={handleLogout} className="hover:bg-transparent">
+          <button
+            onClick={handleLogout}
+            className="hover:bg-transparent hover:text-yellow "
+          >
             Logout
             <span className="text-lg font-medium">
               <CiLogout />
@@ -93,7 +98,7 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="navbar-end">
-            {user?.email ? (
+            {user ? (
               <Link to="/signUp">
                 <button className="btn btn-sm md:btn bg-yellow md:bg-yellow hover:scale-105 hover:bg-yellow hover:border-yellow text-base-100 md:text-base-100 border-yellow md:border-yellow px-1 ">
                   Register

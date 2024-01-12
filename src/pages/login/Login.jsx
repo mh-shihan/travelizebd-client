@@ -37,7 +37,7 @@ const Login = () => {
   };
 
   return (
-    <div className="hero min-h-screen bg-base-200">
+    <div className="hero min-h-screen bg-base-200 max-w-7xl mx-auto px-1">
       <div className="hero-content w-full flex-col lg:flex-row ">
         <div className="text-center w-1/2 ">
           <Lottie

@@ -43,7 +43,7 @@ const SignUp = () => {
   };
 
   return (
-    <div className="hero min-h-screen bg-base-200">
+    <div className="hero min-h-screen bg-base-200 max-w-7xl mx-auto px-1">
       <div className="hero-content w-full flex-col lg:flex-row ">
         <div className="text-center w-1/2 ">
           <h1 className="text-5xl font-bold mb-6">Register now!</h1>
@@ -54,7 +54,7 @@ const SignUp = () => {
             loop={false}
           ></Lottie>
         </div>
-        <div className="card  w-full max-w-sm shadow-2xl bg-base-100">
+        <div className="card  w-full max-w-sm shadow-2xl bg-base-100 ">
           <form onSubmit={handleSubmit(onSubmit)} className="card-body">
             <div className="form-control">
               <label className="label">
