@@ -51,7 +51,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="bg-base-200 py-3 w-full z-[50] bg-transparent fixed mb-20 ">
+    <div className="bg-black bg-opacity-50 py-3 w-full z-[50] fixed mb-20 ">
       <div className=" max-w-7xl mx-auto">
         <div className="navbar  w-full">
           <div className="navbar-start">
