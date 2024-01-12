@@ -6,14 +6,14 @@ import TourGuideTab from "./TourGuideTab";
 
 const TourismAndGuide = () => {
   return (
-    <div>
+    <div className="mb-10">
       <Tabs>
         <TabList>
           <Tab>
-            <h3 className="text-lg font-medium text-gray">Overview</h3>
+            <h3 className="text-lg font-medium text-gray">Our Packages</h3>
           </Tab>
           <Tab>
-            <h3 className="text-lg font-medium text-gray">Our Packages</h3>
+            <h3 className="text-lg font-medium text-gray">Overview</h3>
           </Tab>
           <Tab>
             <h3 className="text-lg font-medium text-gray">
@@ -21,12 +21,11 @@ const TourismAndGuide = () => {
             </h3>
           </Tab>
         </TabList>
-
-        <TabPanel>
-          <OverviewTab></OverviewTab>
-        </TabPanel>
         <TabPanel>
           <OurPackagesTab></OurPackagesTab>
+        </TabPanel>
+        <TabPanel>
+          <OverviewTab></OverviewTab>
         </TabPanel>
         <TabPanel>
           <TourGuideTab></TourGuideTab>

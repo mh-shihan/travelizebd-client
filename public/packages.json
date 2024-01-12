@@ -1,0 +1,1331 @@
+[
+  {
+    "photo": "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+    "type": "Boating",
+    "title": "Barishal Tour",
+    "price": 5000,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Exploring Barishal",
+      "description": "Enjoy a day of boating and scenic views in Barishal."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Cultural Delights",
+      "description": "Immerse yourself in the local culture and attractions of Barishal."
+    }
+  },
+  {
+    "photo": "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+    "type": "Sports",
+    "title": "Cox's Bazar Tour",
+    "price": 4500,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Sports Extravaganza",
+      "description": "Engage in thrilling sports activities on the beautiful beaches of Cox's Bazar."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Coastal Relaxation",
+      "description": "Relax and unwind by the sea, enjoying the coastal vibes of Cox's Bazar."
+    }
+  },
+  {
+    "photo": "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+    "type": "Walking",
+    "title": "Dhaka Tour",
+    "price": 2000,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Stroll through Dhaka",
+      "description": "Discover the historical landmarks and vibrant streets of Dhaka."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Cultural Exploration",
+      "description": "Immerse yourself in the rich culture and traditions of Dhaka."
+    }
+  },
+  {
+    "photo": "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+    "type": "Air Rides",
+    "title": "Kuakata Tour",
+    "price": 6000,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Exploring Kuakata",
+      "description": "Enjoy a day of boating and scenic views in Kuakata."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Cultural Delights",
+      "description": "Immerse yourself in the local culture and attractions of Kuakata."
+    }
+  },
+  {
+    "photo": "https://i.ibb.co/ggb20sB/sajek.jpg",
+    "type": "Hiking",
+    "title": "Sajek Tour",
+    "price": 5500,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Exploring Sajek",
+      "description": "Enjoy a day of boating and scenic views in Sajek."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Cultural Delights",
+      "description": "Immerse yourself in the local culture and attractions of Sajek."
+    }
+  },
+  {
+    "photo": "https://i.ibb.co/5x8s5X5/sundarban.jpg",
+    "type": "Adventure",
+    "title": "Sundarban Tour",
+    "price": 8000,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Exploring Sundarban",
+      "description": "Enjoy a day of boating and scenic views in Sundarban."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Cultural Delights",
+      "description": "Immerse yourself in the local culture and attractions of Sundarban."
+    }
+  },
+
+  {
+    "photo": "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+    "type": "Boating",
+    "title": "Barishal Tour",
+    "price": 5000,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Exploring Barishal",
+      "description": "Enjoy a day of boating and scenic views in Barishal."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Cultural Delights",
+      "description": "Immerse yourself in the local culture and attractions of Barishal."
+    }
+  },
+  {
+    "photo": "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+    "type": "Sports",
+    "title": "Cox's Bazar Tour",
+    "price": 4500,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Sports Extravaganza",
+      "description": "Engage in thrilling sports activities on the beautiful beaches of Cox's Bazar."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Coastal Relaxation",
+      "description": "Relax and unwind by the sea, enjoying the coastal vibes of Cox's Bazar."
+    }
+  },
+  {
+    "photo": "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+    "type": "Walking",
+    "title": "Dhaka Tour",
+    "price": 2000,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Stroll through Dhaka",
+      "description": "Discover the historical landmarks and vibrant streets of Dhaka."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Cultural Exploration",
+      "description": "Immerse yourself in the rich culture and traditions of Dhaka."
+    }
+  },
+  {
+    "photo": "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+    "type": "Air Rides",
+    "title": "Kuakata Tour",
+    "price": 6000,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Exploring Kuakata",
+      "description": "Enjoy a day of boating and scenic views in Kuakata."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Cultural Delights",
+      "description": "Immerse yourself in the local culture and attractions of Kuakata."
+    }
+  },
+  {
+    "photo": "https://i.ibb.co/ggb20sB/sajek.jpg",
+    "type": "Hiking",
+    "title": "Sajek Tour",
+    "price": 5500,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Exploring Sajek",
+      "description": "Enjoy a day of boating and scenic views in Sajek."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Cultural Delights",
+      "description": "Immerse yourself in the local culture and attractions of Sajek."
+    }
+  },
+  {
+    "photo": "https://i.ibb.co/5x8s5X5/sundarban.jpg",
+    "type": "Adventure",
+    "title": "Sundarban Tour",
+    "price": 8000,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Exploring Sundarban",
+      "description": "Enjoy a day of boating and scenic views in Sundarban."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Cultural Delights",
+      "description": "Immerse yourself in the local culture and attractions of Sundarban."
+    }
+  },
+
+  {
+    "photo": "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+    "type": "Boating",
+    "title": "Barishal Tour",
+    "price": 5000,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Exploring Barishal",
+      "description": "Enjoy a day of boating and scenic views in Barishal."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Cultural Delights",
+      "description": "Immerse yourself in the local culture and attractions of Barishal."
+    }
+  },
+  {
+    "photo": "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+    "type": "Sports",
+    "title": "Cox's Bazar Tour",
+    "price": 4500,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Sports Extravaganza",
+      "description": "Engage in thrilling sports activities on the beautiful beaches of Cox's Bazar."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Coastal Relaxation",
+      "description": "Relax and unwind by the sea, enjoying the coastal vibes of Cox's Bazar."
+    }
+  },
+  {
+    "photo": "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+    "type": "Walking",
+    "title": "Dhaka Tour",
+    "price": 2000,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Stroll through Dhaka",
+      "description": "Discover the historical landmarks and vibrant streets of Dhaka."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Cultural Exploration",
+      "description": "Immerse yourself in the rich culture and traditions of Dhaka."
+    }
+  },
+  {
+    "photo": "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+    "type": "Air Rides",
+    "title": "Kuakata Tour",
+    "price": 6000,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Exploring Kuakata",
+      "description": "Enjoy a day of boating and scenic views in Kuakata."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Cultural Delights",
+      "description": "Immerse yourself in the local culture and attractions of Kuakata."
+    }
+  },
+  {
+    "photo": "https://i.ibb.co/ggb20sB/sajek.jpg",
+    "type": "Hiking",
+    "title": "Sajek Tour",
+    "price": 5500,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Exploring Sajek",
+      "description": "Enjoy a day of boating and scenic views in Sajek."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Cultural Delights",
+      "description": "Immerse yourself in the local culture and attractions of Sajek."
+    }
+  },
+  {
+    "photo": "https://i.ibb.co/5x8s5X5/sundarban.jpg",
+    "type": "Adventure",
+    "title": "Sundarban Tour",
+    "price": 8000,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Exploring Sundarban",
+      "description": "Enjoy a day of boating and scenic views in Sundarban."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Cultural Delights",
+      "description": "Immerse yourself in the local culture and attractions of Sundarban."
+    }
+  },
+
+  {
+    "photo": "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+    "type": "Boating",
+    "title": "Barishal Tour",
+    "price": 5000,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Exploring Barishal",
+      "description": "Enjoy a day of boating and scenic views in Barishal."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Cultural Delights",
+      "description": "Immerse yourself in the local culture and attractions of Barishal."
+    }
+  },
+  {
+    "photo": "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+    "type": "Sports",
+    "title": "Cox's Bazar Tour",
+    "price": 4500,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Sports Extravaganza",
+      "description": "Engage in thrilling sports activities on the beautiful beaches of Cox's Bazar."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Coastal Relaxation",
+      "description": "Relax and unwind by the sea, enjoying the coastal vibes of Cox's Bazar."
+    }
+  },
+  {
+    "photo": "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+    "type": "Walking",
+    "title": "Dhaka Tour",
+    "price": 2000,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Stroll through Dhaka",
+      "description": "Discover the historical landmarks and vibrant streets of Dhaka."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Cultural Exploration",
+      "description": "Immerse yourself in the rich culture and traditions of Dhaka."
+    }
+  },
+  {
+    "photo": "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+    "type": "Air Rides",
+    "title": "Kuakata Tour",
+    "price": 6000,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Exploring Kuakata",
+      "description": "Enjoy a day of boating and scenic views in Kuakata."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Cultural Delights",
+      "description": "Immerse yourself in the local culture and attractions of Kuakata."
+    }
+  },
+  {
+    "photo": "https://i.ibb.co/ggb20sB/sajek.jpg",
+    "type": "Hiking",
+    "title": "Sajek Tour",
+    "price": 5500,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Exploring Sajek",
+      "description": "Enjoy a day of boating and scenic views in Sajek."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Cultural Delights",
+      "description": "Immerse yourself in the local culture and attractions of Sajek."
+    }
+  },
+  {
+    "photo": "https://i.ibb.co/5x8s5X5/sundarban.jpg",
+    "type": "Adventure",
+    "title": "Sundarban Tour",
+    "price": 8000,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Exploring Sundarban",
+      "description": "Enjoy a day of boating and scenic views in Sundarban."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Cultural Delights",
+      "description": "Immerse yourself in the local culture and attractions of Sundarban."
+    }
+  },
+
+  {
+    "photo": "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+    "type": "Boating",
+    "title": "Barishal Tour",
+    "price": 5000,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Exploring Barishal",
+      "description": "Enjoy a day of boating and scenic views in Barishal."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Cultural Delights",
+      "description": "Immerse yourself in the local culture and attractions of Barishal."
+    }
+  },
+  {
+    "photo": "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+    "type": "Sports",
+    "title": "Cox's Bazar Tour",
+    "price": 4500,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Sports Extravaganza",
+      "description": "Engage in thrilling sports activities on the beautiful beaches of Cox's Bazar."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Coastal Relaxation",
+      "description": "Relax and unwind by the sea, enjoying the coastal vibes of Cox's Bazar."
+    }
+  },
+  {
+    "photo": "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+    "type": "Walking",
+    "title": "Dhaka Tour",
+    "price": 2000,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Stroll through Dhaka",
+      "description": "Discover the historical landmarks and vibrant streets of Dhaka."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Cultural Exploration",
+      "description": "Immerse yourself in the rich culture and traditions of Dhaka."
+    }
+  },
+  {
+    "photo": "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+    "type": "Air Rides",
+    "title": "Kuakata Tour",
+    "price": 6000,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Exploring Kuakata",
+      "description": "Enjoy a day of boating and scenic views in Kuakata."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Cultural Delights",
+      "description": "Immerse yourself in the local culture and attractions of Kuakata."
+    }
+  },
+  {
+    "photo": "https://i.ibb.co/ggb20sB/sajek.jpg",
+    "type": "Hiking",
+    "title": "Sajek Tour",
+    "price": 5500,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Exploring Sajek",
+      "description": "Enjoy a day of boating and scenic views in Sajek."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Cultural Delights",
+      "description": "Immerse yourself in the local culture and attractions of Sajek."
+    }
+  },
+  {
+    "photo": "https://i.ibb.co/5x8s5X5/sundarban.jpg",
+    "type": "Adventure",
+    "title": "Sundarban Tour",
+    "price": 8000,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Exploring Sundarban",
+      "description": "Enjoy a day of boating and scenic views in Sundarban."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Cultural Delights",
+      "description": "Immerse yourself in the local culture and attractions of Sundarban."
+    }
+  },
+
+  {
+    "photo": "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+    "type": "Boating",
+    "title": "Barishal Tour",
+    "price": 5000,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Exploring Barishal",
+      "description": "Enjoy a day of boating and scenic views in Barishal."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Cultural Delights",
+      "description": "Immerse yourself in the local culture and attractions of Barishal."
+    }
+  },
+  {
+    "photo": "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+    "type": "Sports",
+    "title": "Cox's Bazar Tour",
+    "price": 4500,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Sports Extravaganza",
+      "description": "Engage in thrilling sports activities on the beautiful beaches of Cox's Bazar."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Coastal Relaxation",
+      "description": "Relax and unwind by the sea, enjoying the coastal vibes of Cox's Bazar."
+    }
+  },
+  {
+    "photo": "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+    "type": "Walking",
+    "title": "Dhaka Tour",
+    "price": 2000,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Stroll through Dhaka",
+      "description": "Discover the historical landmarks and vibrant streets of Dhaka."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Cultural Exploration",
+      "description": "Immerse yourself in the rich culture and traditions of Dhaka."
+    }
+  },
+  {
+    "photo": "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+    "type": "Air Rides",
+    "title": "Kuakata Tour",
+    "price": 6000,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Exploring Kuakata",
+      "description": "Enjoy a day of boating and scenic views in Kuakata."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Cultural Delights",
+      "description": "Immerse yourself in the local culture and attractions of Kuakata."
+    }
+  },
+  {
+    "photo": "https://i.ibb.co/ggb20sB/sajek.jpg",
+    "type": "Hiking",
+    "title": "Sajek Tour",
+    "price": 5500,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Exploring Sajek",
+      "description": "Enjoy a day of boating and scenic views in Sajek."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Cultural Delights",
+      "description": "Immerse yourself in the local culture and attractions of Sajek."
+    }
+  },
+  {
+    "photo": "https://i.ibb.co/5x8s5X5/sundarban.jpg",
+    "type": "Adventure",
+    "title": "Sundarban Tour",
+    "price": 8000,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Exploring Sundarban",
+      "description": "Enjoy a day of boating and scenic views in Sundarban."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Cultural Delights",
+      "description": "Immerse yourself in the local culture and attractions of Sundarban."
+    }
+  },
+
+  {
+    "photo": "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+    "type": "Boating",
+    "title": "Barishal Tour",
+    "price": 5000,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Exploring Barishal",
+      "description": "Enjoy a day of boating and scenic views in Barishal."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Cultural Delights",
+      "description": "Immerse yourself in the local culture and attractions of Barishal."
+    }
+  },
+  {
+    "photo": "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+    "type": "Sports",
+    "title": "Cox's Bazar Tour",
+    "price": 4500,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Sports Extravaganza",
+      "description": "Engage in thrilling sports activities on the beautiful beaches of Cox's Bazar."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Coastal Relaxation",
+      "description": "Relax and unwind by the sea, enjoying the coastal vibes of Cox's Bazar."
+    }
+  },
+  {
+    "photo": "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+    "type": "Walking",
+    "title": "Dhaka Tour",
+    "price": 2000,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Stroll through Dhaka",
+      "description": "Discover the historical landmarks and vibrant streets of Dhaka."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Cultural Exploration",
+      "description": "Immerse yourself in the rich culture and traditions of Dhaka."
+    }
+  },
+  {
+    "photo": "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+    "type": "Air Rides",
+    "title": "Kuakata Tour",
+    "price": 6000,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Exploring Kuakata",
+      "description": "Enjoy a day of boating and scenic views in Kuakata."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Cultural Delights",
+      "description": "Immerse yourself in the local culture and attractions of Kuakata."
+    }
+  },
+  {
+    "photo": "https://i.ibb.co/ggb20sB/sajek.jpg",
+    "type": "Hiking",
+    "title": "Sajek Tour",
+    "price": 5500,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Exploring Sajek",
+      "description": "Enjoy a day of boating and scenic views in Sajek."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Cultural Delights",
+      "description": "Immerse yourself in the local culture and attractions of Sajek."
+    }
+  },
+  {
+    "photo": "https://i.ibb.co/5x8s5X5/sundarban.jpg",
+    "type": "Adventure",
+    "title": "Sundarban Tour",
+    "price": 8000,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Exploring Sundarban",
+      "description": "Enjoy a day of boating and scenic views in Sundarban."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Cultural Delights",
+      "description": "Immerse yourself in the local culture and attractions of Sundarban."
+    }
+  },
+
+  {
+    "photo": "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+    "type": "Boating",
+    "title": "Barishal Tour",
+    "price": 5000,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Exploring Barishal",
+      "description": "Enjoy a day of boating and scenic views in Barishal."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Cultural Delights",
+      "description": "Immerse yourself in the local culture and attractions of Barishal."
+    }
+  },
+  {
+    "photo": "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+    "type": "Sports",
+    "title": "Cox's Bazar Tour",
+    "price": 4500,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Sports Extravaganza",
+      "description": "Engage in thrilling sports activities on the beautiful beaches of Cox's Bazar."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Coastal Relaxation",
+      "description": "Relax and unwind by the sea, enjoying the coastal vibes of Cox's Bazar."
+    }
+  },
+  {
+    "photo": "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+    "type": "Walking",
+    "title": "Dhaka Tour",
+    "price": 2000,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Stroll through Dhaka",
+      "description": "Discover the historical landmarks and vibrant streets of Dhaka."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Cultural Exploration",
+      "description": "Immerse yourself in the rich culture and traditions of Dhaka."
+    }
+  },
+  {
+    "photo": "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+    "type": "Air Rides",
+    "title": "Kuakata Tour",
+    "price": 6000,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Exploring Kuakata",
+      "description": "Enjoy a day of boating and scenic views in Kuakata."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Cultural Delights",
+      "description": "Immerse yourself in the local culture and attractions of Kuakata."
+    }
+  },
+  {
+    "photo": "https://i.ibb.co/ggb20sB/sajek.jpg",
+    "type": "Hiking",
+    "title": "Sajek Tour",
+    "price": 5500,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Exploring Sajek",
+      "description": "Enjoy a day of boating and scenic views in Sajek."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Cultural Delights",
+      "description": "Immerse yourself in the local culture and attractions of Sajek."
+    }
+  },
+  {
+    "photo": "https://i.ibb.co/5x8s5X5/sundarban.jpg",
+    "type": "Adventure",
+    "title": "Sundarban Tour",
+    "price": 8000,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Exploring Sundarban",
+      "description": "Enjoy a day of boating and scenic views in Sundarban."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Cultural Delights",
+      "description": "Immerse yourself in the local culture and attractions of Sundarban."
+    }
+  },
+
+  {
+    "photo": "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+    "type": "Boating",
+    "title": "Barishal Tour",
+    "price": 5000,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Exploring Barishal",
+      "description": "Enjoy a day of boating and scenic views in Barishal."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Cultural Delights",
+      "description": "Immerse yourself in the local culture and attractions of Barishal."
+    }
+  },
+  {
+    "photo": "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+    "type": "Sports",
+    "title": "Cox's Bazar Tour",
+    "price": 4500,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Sports Extravaganza",
+      "description": "Engage in thrilling sports activities on the beautiful beaches of Cox's Bazar."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Coastal Relaxation",
+      "description": "Relax and unwind by the sea, enjoying the coastal vibes of Cox's Bazar."
+    }
+  },
+  {
+    "photo": "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+    "type": "Walking",
+    "title": "Dhaka Tour",
+    "price": 2000,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Stroll through Dhaka",
+      "description": "Discover the historical landmarks and vibrant streets of Dhaka."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Cultural Exploration",
+      "description": "Immerse yourself in the rich culture and traditions of Dhaka."
+    }
+  },
+  {
+    "photo": "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+    "type": "Air Rides",
+    "title": "Kuakata Tour",
+    "price": 6000,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Exploring Kuakata",
+      "description": "Enjoy a day of boating and scenic views in Kuakata."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Cultural Delights",
+      "description": "Immerse yourself in the local culture and attractions of Kuakata."
+    }
+  },
+  {
+    "photo": "https://i.ibb.co/ggb20sB/sajek.jpg",
+    "type": "Hiking",
+    "title": "Sajek Tour",
+    "price": 5500,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Exploring Sajek",
+      "description": "Enjoy a day of boating and scenic views in Sajek."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Cultural Delights",
+      "description": "Immerse yourself in the local culture and attractions of Sajek."
+    }
+  },
+  {
+    "photo": "https://i.ibb.co/5x8s5X5/sundarban.jpg",
+    "type": "Adventure",
+    "title": "Sundarban Tour",
+    "price": 8000,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Exploring Sundarban",
+      "description": "Enjoy a day of boating and scenic views in Sundarban."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Cultural Delights",
+      "description": "Immerse yourself in the local culture and attractions of Sundarban."
+    }
+  },
+
+  {
+    "photo": "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+    "type": "Boating",
+    "title": "Barishal Tour",
+    "price": 5000,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Exploring Barishal",
+      "description": "Enjoy a day of boating and scenic views in Barishal."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Cultural Delights",
+      "description": "Immerse yourself in the local culture and attractions of Barishal."
+    }
+  },
+  {
+    "photo": "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+    "type": "Sports",
+    "title": "Cox's Bazar Tour",
+    "price": 4500,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Sports Extravaganza",
+      "description": "Engage in thrilling sports activities on the beautiful beaches of Cox's Bazar."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Coastal Relaxation",
+      "description": "Relax and unwind by the sea, enjoying the coastal vibes of Cox's Bazar."
+    }
+  },
+  {
+    "photo": "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+    "type": "Walking",
+    "title": "Dhaka Tour",
+    "price": 2000,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Stroll through Dhaka",
+      "description": "Discover the historical landmarks and vibrant streets of Dhaka."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Cultural Exploration",
+      "description": "Immerse yourself in the rich culture and traditions of Dhaka."
+    }
+  },
+  {
+    "photo": "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+    "type": "Air Rides",
+    "title": "Kuakata Tour",
+    "price": 6000,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Exploring Kuakata",
+      "description": "Enjoy a day of boating and scenic views in Kuakata."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Cultural Delights",
+      "description": "Immerse yourself in the local culture and attractions of Kuakata."
+    }
+  },
+  {
+    "photo": "https://i.ibb.co/ggb20sB/sajek.jpg",
+    "type": "Hiking",
+    "title": "Sajek Tour",
+    "price": 5500,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Exploring Sajek",
+      "description": "Enjoy a day of boating and scenic views in Sajek."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Cultural Delights",
+      "description": "Immerse yourself in the local culture and attractions of Sajek."
+    }
+  },
+  {
+    "photo": "https://i.ibb.co/5x8s5X5/sundarban.jpg",
+    "type": "Adventure",
+    "title": "Sundarban Tour",
+    "price": 8000,
+    "gallery": [
+      "https://i.ibb.co/2MrRGSQ/barishal.jpg",
+      "https://i.ibb.co/v4zz32y/cox-s-bazar.jpg",
+      "https://i.ibb.co/k1gcGdp/dhaka-sadarghat.jpg",
+      "https://i.ibb.co/1T5CfM6/kuakata-sea.jpg",
+      "https://i.ibb.co/ggb20sB/sajek.jpg",
+      "https://i.ibb.co/5x8s5X5/sundarban.jpg"
+    ],
+    "dayOne": {
+      "title": "Day 1 - Exploring Sundarban",
+      "description": "Enjoy a day of boating and scenic views in Sundarban."
+    },
+    "dayTwo": {
+      "title": "Day 2 - Cultural Delights",
+      "description": "Immerse yourself in the local culture and attractions of Sundarban."
+    }
+  }
+]
