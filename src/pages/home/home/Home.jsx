@@ -1,4 +1,6 @@
+import SectionTitle from "../../../components/Sectiontitle";
 import Banner from "../banner/Banner";
+import TourismAndGuide from "../tourismAndGuide/TourismAndGuide";
 
 const Home = () => {
   return (
@@ -6,7 +8,15 @@ const Home = () => {
       <header>
         <Banner></Banner>
       </header>
-      <main className="max-w-7xl mx-auto px-1"></main>
+      <main className="max-w-7xl mx-auto px-1">
+        <section>
+          <SectionTitle
+            subheading="Guided Adventures"
+            heading="Explore with Experts"
+          ></SectionTitle>
+          <TourismAndGuide></TourismAndGuide>
+        </section>
+      </main>
     </div>
   );
 };
