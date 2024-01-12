@@ -1,5 +1,8 @@
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
+import OverviewTab from "./OverviewTab";
+import OurPackagesTab from "./OurPackagesTab";
+import TourGuideTab from "./TourGuideTab";
 
 const TourismAndGuide = () => {
   return (
@@ -20,13 +23,13 @@ const TourismAndGuide = () => {
         </TabList>
 
         <TabPanel>
-          <h2>Any content 1</h2>
+          <OverviewTab></OverviewTab>
         </TabPanel>
         <TabPanel>
-          <h2>Any content 2</h2>
+          <OurPackagesTab></OurPackagesTab>
         </TabPanel>
         <TabPanel>
-          <h2>Any content 3</h2>
+          <TourGuideTab></TourGuideTab>
         </TabPanel>
       </Tabs>
     </div>

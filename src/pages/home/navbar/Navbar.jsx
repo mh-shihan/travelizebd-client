@@ -85,7 +85,7 @@ const Navbar = () => {
             </div>
             <Link to="/">
               <div className="btn btn-ghost bg-transparent hover:bg-transparent flex flex-col md:flex-row ">
-                <img src={logo} className="hidden md:block" />
+                <img src={logo} className="hidden md:block rounded-md" />
                 <h1 className="text-xl md:text-3xl font-bold text-white">
                   Travelize<span className="text-[#F7B801]">BD</span>
                 </h1>
