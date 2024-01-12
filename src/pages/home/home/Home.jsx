@@ -7,7 +7,6 @@ const Home = () => {
         <Banner></Banner>
       </header>
       <main className="max-w-7xl mx-auto px-1"></main>
-      <footer></footer>
     </div>
   );
 };
