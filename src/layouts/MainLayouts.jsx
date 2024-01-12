@@ -10,11 +10,16 @@ const MainLayouts = () => {
 
   return (
     <div>
-      {!noHeaderFooter && <Navbar></Navbar>}
-      <Home></Home>
-      <main className="max-w-7xl mx-auto">
+      {!noHeaderFooter && (
+        <>
+          <Navbar></Navbar>
+          <Home></Home>
+        </>
+      )}
+
+      <div className="max-w-7xl mx-auto px-1">
         <Outlet></Outlet>
-      </main>
+      </div>
     </div>
   );
 };

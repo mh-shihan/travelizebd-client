@@ -15,7 +15,7 @@ const Navbar = () => {
   };
 
   const profile = (
-    <div className="dropdown dropdown-bottom dropdown-end">
+    <div className="dropdown dropdown-hover dropdown-bottom dropdown-end">
       <div tabIndex={0} role="button" className=" m-1">
         {user && (
           <img src={user?.photoURL} className="w-12 h-12 rounded-full"></img>
@@ -23,7 +23,7 @@ const Navbar = () => {
       </div>
       <ul
         tabIndex={0}
-        className="dropdown-content z-[1] menu p-4 shadow bg-base-100 rounded-box font-medium "
+        className=" dropdown-content z-[1] menu p-4 shadow-md bg-base-100 rounded-box  bg-transparent text-base-100 border  "
       >
         <li>{user?.displayName}</li>
         <hr className="my-2" />
@@ -46,7 +46,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="bg-base-200 py-3">
+    <div className="bg-base-200 py-3 w-full z-[50] bg-transparent fixed mb-20 ">
       <div className=" max-w-7xl mx-auto">
         <div className="navbar  w-full">
           <div className="navbar-start">
@@ -79,29 +79,29 @@ const Navbar = () => {
               </ul>
             </div>
             <Link to="/">
-              <a className=" btn btn-ghost bg-transparent hover:bg-transparent flex flex-col md:flex-row">
-                <img src={logo} alt="" />
-                <h1 className="text-xl md:text-3xl font-bold">
+              <div className="btn btn-ghost bg-transparent hover:bg-transparent flex flex-col md:flex-row ">
+                <img src={logo} className="hidden md:block" />
+                <h1 className="text-xl md:text-3xl font-bold text-white">
                   Travelize<span className="text-[#F7B801]">BD</span>
                 </h1>
-              </a>
+              </div>
             </Link>
           </div>
           <div className="navbar-center hidden lg:flex">
-            <ul className="menu menu-horizontal px-1">
+            <ul className="menu menu-horizontal px-1 text-base">
               <NavLinks></NavLinks>
             </ul>
           </div>
           <div className="navbar-end">
             {user?.email ? (
               <Link to="/signUp">
-                <button className="btn btn-sm md:btn bg-yellow md:bg-yellow hover:bg-orange-500 text-base-100 md:text-base-100">
+                <button className="btn btn-sm md:btn bg-yellow md:bg-yellow hover:scale-105 hover:bg-yellow hover:border-yellow text-base-100 md:text-base-100 border-yellow md:border-yellow px-1 ">
                   Register
                 </button>
               </Link>
             ) : (
               <Link to="/login">
-                <button className="btn btn-sm md:btn bg-yellow md:bg-yellow hover:bg-orange-500 text-base-100 md:text-base-100">
+                <button className="btn btn-sm md:btn bg-yellow md:bg-yellow hover:bg-yellow text-base-100 md:text-base-100 border-yellow md:border-yellow">
                   Login
                 </button>
               </Link>

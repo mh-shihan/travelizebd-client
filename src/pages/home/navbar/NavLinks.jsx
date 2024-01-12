@@ -9,7 +9,7 @@ const NavLinks = () => {
             return {
               background: isActive ? "transparent" : "",
               fontWeight: isActive ? "bold" : "",
-              color: isActive ? "#F7B801" : "black",
+              color: isActive ? "#F7B801" : "white",
               viewTransitionName: isTransitioning ? "slide" : "",
             };
           }}
@@ -24,7 +24,7 @@ const NavLinks = () => {
             return {
               background: isActive ? "transparent" : "",
               fontWeight: isActive ? "bold" : "",
-              color: isActive ? "#F7B801" : "black",
+              color: isActive ? "#F7B801" : "white",
               viewTransitionName: isTransitioning ? "slide" : "",
             };
           }}
@@ -39,7 +39,7 @@ const NavLinks = () => {
             return {
               background: isActive ? "transparent" : "",
               fontWeight: isActive ? "bold" : "",
-              color: isActive ? "#F7B801" : "black",
+              color: isActive ? "#F7B801" : "white",
               viewTransitionName: isTransitioning ? "slide" : "",
             };
           }}
@@ -54,7 +54,7 @@ const NavLinks = () => {
             return {
               background: isActive ? "transparent" : "",
               fontWeight: isActive ? "bold" : "",
-              color: isActive ? "#F7B801" : "black",
+              color: isActive ? "#F7B801" : "white",
               viewTransitionName: isTransitioning ? "slide" : "",
             };
           }}
@@ -69,7 +69,7 @@ const NavLinks = () => {
             return {
               background: isActive ? "transparent" : "",
               fontWeight: isActive ? "bold" : "",
-              color: isActive ? "#F7B801" : "black",
+              color: isActive ? "#F7B801" : "white",
               viewTransitionName: isTransitioning ? "slide" : "",
             };
           }}
