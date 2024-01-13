@@ -1,6 +1,9 @@
 import { Outlet, useLocation } from "react-router-dom";
 import Navbar from "../pages/home/navbar/Navbar";
 import Footer from "../pages/home/footer/Footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const MainLayouts = () => {
   const location = useLocation();
@@ -8,8 +11,15 @@ const MainLayouts = () => {
     location.pathname.includes("/signUp") ||
     location.pathname.includes("/login");
 
+  useEffect(() => {
+    AOS.init({
+      duration: 900,
+      offset: 100,
+    });
+  }, []);
+
   return (
-    <div>
+    <div data-aos="fade-up">
       {!noHeaderFooter && <Navbar></Navbar>}
       <div className="">
         <Outlet></Outlet>
