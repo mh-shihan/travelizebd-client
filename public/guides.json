@@ -1,0 +1,58 @@
+[
+  {
+    "photo": "https://i.ibb.co/26GQcfB/guide-1.jpg",
+    "name": "Alice Johnson",
+    "education": "Bachelor's in Tourism Management",
+    "skill": ["Multilingual", "Historical Knowledge", "Navigation"],
+    "work_experience": "5 years as a tour guide",
+    "contact": "alice@example.com"
+  },
+  {
+    "photo": "https://i.ibb.co/bv88tP9/guide-3.jpg",
+    "name": "Bob Smith",
+    "education": "Associate's in Hospitality",
+    "skill": ["Outdoor Adventure", "Wildlife Expertise", "Customer Service"],
+    "work_experience": "3 years guiding nature tours",
+    "contact": "bob@example.com"
+  },
+  {
+    "photo": "https://i.ibb.co/kQShD9H/guide-2.jpg",
+    "name": "Elena Rodriguez",
+    "education": "Master's in Cultural Anthropology",
+    "skill": [
+      "Cultural Insight",
+      "Language Proficiency",
+      "Interpersonal Skills"
+    ],
+    "work_experience": "7 years showcasing local traditions",
+    "contact": "elena@example.com"
+  },
+  {
+    "photo": "https://i.ibb.co/26GQcfB/guide-1.jpg",
+    "name": "Alice Johnson",
+    "education": "Bachelor's in Tourism Management",
+    "skill": ["Multilingual", "Historical Knowledge", "Navigation"],
+    "work_experience": "5 years as a tour guide",
+    "contact": "alice@example.com"
+  },
+  {
+    "photo": "https://i.ibb.co/bv88tP9/guide-3.jpg",
+    "name": "Bob Smith",
+    "education": "Associate's in Hospitality",
+    "skill": ["Outdoor Adventure", "Wildlife Expertise", "Customer Service"],
+    "work_experience": "3 years guiding nature tours",
+    "contact": "bob@example.com"
+  },
+  {
+    "photo": "https://i.ibb.co/kQShD9H/guide-2.jpg",
+    "name": "Elena Rodriguez",
+    "education": "Master's in Cultural Anthropology",
+    "skill": [
+      "Cultural Insight",
+      "Language Proficiency",
+      "Interpersonal Skills"
+    ],
+    "work_experience": "7 years showcasing local traditions",
+    "contact": "elena@example.com"
+  }
+]

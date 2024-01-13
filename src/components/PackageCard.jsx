@@ -36,6 +36,7 @@ const PackageCard = ({ tourPackage }) => {
           <h2 className="card-title">{title}</h2>
         </div>
         {/* TODO: handleClick for package details */}
+        {/* TODO: handleHeartClick to add to myWishList */}
         <div className="card-actions justify-end items-end ">
           <button className="btn btn-outline btn-block text-xl ">
             View Package
