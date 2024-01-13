@@ -8,7 +8,7 @@ const AllTouristStory = () => {
   const loadingAnimation = useLoadingAnimation();
   const [touristStories, isLoading] = useTouristStory();
   return (
-    <div className="pt-20">
+    <div className="pt-20 max-w-7xl mx-auto px-1">
       <SectionTitle
         heading="Happy Tourist"
         subheading="Read some"
