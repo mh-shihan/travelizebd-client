@@ -3,10 +3,9 @@ import { FaUser } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const TouristStoryCard = ({ touristStory }) => {
-  const { photo, story } = touristStory;
+  const { photo, story, _id } = touristStory;
   return (
-    <Link>
-      {/* Added Link */}
+    <Link to={`/storyDetails/${_id}`}>
       <div className="space-y-4 flex justify-center flex-col items-center mt-6 shadow-lg p-4 rounded-xl bg-white hover:transition-all hover:scale-105">
         <div className="relative">
           <img

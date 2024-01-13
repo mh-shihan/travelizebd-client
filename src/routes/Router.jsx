@@ -7,6 +7,7 @@ import Home from "../pages/home/home/Home";
 import AllPackages from "../pages/allPackages/AllPackages";
 import TourType from "../pages/home/tourTypes/TourType";
 import AllTouristStory from "../pages/home/touristStory/AllTouristStory";
+import StoryDetails from "../pages/home/touristStory/StoryDetails";
 
 export const router = createBrowserRouter([
   {
@@ -37,6 +38,12 @@ export const router = createBrowserRouter([
       {
         path: "allTouristStory",
         element: <AllTouristStory></AllTouristStory>,
+      },
+      {
+        path: "storyDetails/:id",
+        element: <StoryDetails></StoryDetails>,
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/api/v1/storyDetails/${params.id}`),
       },
     ],
   },
