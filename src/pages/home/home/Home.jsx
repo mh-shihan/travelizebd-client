@@ -2,6 +2,7 @@ import SectionTitle from "../../../components/Sectiontitle";
 import Banner from "../banner/Banner";
 import TourTypes from "../tourTypes/TourTypes";
 import TourismAndGuide from "../tourismAndGuide/TourismAndGuide";
+import TouristStory from "../touristStory/TouristStory";
 
 const Home = () => {
   return (
@@ -19,6 +20,9 @@ const Home = () => {
         </section>
         <section>
           <TourTypes></TourTypes>
+        </section>
+        <section>
+          <TouristStory></TouristStory>
         </section>
       </main>
     </div>

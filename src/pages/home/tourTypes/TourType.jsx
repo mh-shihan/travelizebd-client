@@ -1,9 +1,12 @@
 import { useParams } from "react-router-dom";
 import useAllPackages from "../../../hooks/useAllPackages";
 import FilteredTourType from "./FilteredTourPackages";
+import useLoadingAnimation from "../../../hooks/useLoadingAnimation";
+import Lottie from "lottie-react";
 
 const TourType = () => {
-  const [allPackages] = useAllPackages();
+  const loadingAnimation = useLoadingAnimation();
+  const [allPackages, isLoading] = useAllPackages();
   const boating = allPackages.filter((item) => item.type === "Boating");
   const sports = allPackages.filter((item) => item.type === "Sports");
   const walking = allPackages.filter((item) => item.type === "Walking");
@@ -16,6 +19,7 @@ const TourType = () => {
   return (
     <div>
       {/* Boating Tour */}
+      {isLoading && <Lottie animationData={loadingAnimation}></Lottie>}
       {type === "boating" && (
         <FilteredTourType items={boating} type={type}></FilteredTourType>
       )}

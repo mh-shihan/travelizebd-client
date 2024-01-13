@@ -9,10 +9,10 @@ import { GiHiking } from "react-icons/gi";
 
 const TourTypes = () => {
   return (
-    <div>
+    <div className="pt-10">
       <SectionTitle
-        heading="Out best Tours"
-        subheading="Choose Now"
+        heading="Our best Events"
+        subheading="Check it out"
       ></SectionTitle>
       <div className="bg-[#f6f8f9] w-full py-10 px-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 justify-center">

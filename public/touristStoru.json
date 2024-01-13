@@ -1,0 +1,32 @@
+[
+  {
+    "photo": "https://i.ibb.co/kQShD9H/guide-2.jpg",
+    "story": "I had an amazing time exploring the historic streets and trying local cuisine in Kyoto, Japan. The cherry blossoms were in full bloom, creating a picturesque scene everywhere I went.",
+    "name": "Alice Johnson"
+  },
+  {
+    "photo": "https://i.ibb.co/GxqjQCs/tortoise-provider.jpg",
+    "story": "Spent a week trekking through the breathtaking landscapes of Patagonia. The towering mountains, glaciers, and pristine lakes left me in awe of nature's beauty.",
+    "name": "Emily Anderson"
+  },
+  {
+    "photo": "https://i.ibb.co/rMx2GQw/fish-provider.jpg",
+    "story": "Experiencing the vibrant culture of Marrakech was a dream come true. The bustling markets, aromatic spices, and the stunning architecture of the medina made it an unforgettable adventure.",
+    "name": "Claire Smith"
+  },
+  {
+    "photo": "https://i.ibb.co/ZXznGwf/cat-provider.jpg",
+    "story": "Safari in the Serengeti was a wildlife enthusiast's dream. Witnessing the great migration of wildebeest and zebras was a spectacle I'll cherish forever.",
+    "name": "Sophia Rodriguez"
+  },
+  {
+    "photo": "https://i.ibb.co/wCm3405/dog-provider.jpg",
+    "story": "Explored the ancient ruins of Machu Picchu and hiked the Inca Trail. The breathtaking views of the Andes and the rich history of the site left me in awe of the Inca civilization.",
+    "name": "Elena Perez"
+  },
+  {
+    "photo": "https://i.ibb.co/VtXgqMC/profile-pic-1.png",
+    "story": "Sailing through the crystal-clear waters of the Maldives was pure paradise. Snorkeling with vibrant coral reefs and relaxing on pristine beaches made it the perfect tropical getaway.",
+    "name": "MH Shihan"
+  }
+]

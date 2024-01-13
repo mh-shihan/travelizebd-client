@@ -6,7 +6,7 @@ import TourGuideTab from "./TourGuideTab";
 
 const TourismAndGuide = () => {
   return (
-    <div className="mb-10">
+    <div className="mb-10 py-10 px-6 bg-[#f6f8f9]">
       <Tabs>
         <TabList>
           <Tab>
