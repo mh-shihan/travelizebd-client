@@ -2,8 +2,11 @@ import { useQuery } from "@tanstack/react-query";
 import useAxiosPublic from "../../../hooks/useAxiosPublic";
 import PackageCard from "../../../components/PackageCard";
 import { Link } from "react-router-dom";
+import useLoadingAnimation from "../../../hooks/useLoadingAnimation";
+import Lottie from "lottie-react";
 
 const OurPackagesTab = () => {
+  const loadingAnimation = useLoadingAnimation();
   const axiosPublic = useAxiosPublic();
   const { data: tourPackages = [], isLoading } = useQuery({
     queryKey: ["initialPackages"],
@@ -15,10 +18,8 @@ const OurPackagesTab = () => {
 
   return (
     <div className="mt-10">
+      {isLoading && <Lottie animationData={loadingAnimation}></Lottie>}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 ">
-        {isLoading && (
-          <span className="loading loading-dots loading-lg text-center "></span>
-        )}
         {tourPackages.map((tourPackage) => (
           <PackageCard
             key={tourPackage._id}

@@ -5,6 +5,7 @@ import SignUp from "../pages/signUp/SignUp";
 import Login from "../pages/login/Login";
 import Home from "../pages/home/home/Home";
 import AllPackages from "../pages/allPackages/AllPackages";
+import TourType from "../pages/home/tourTypes/TourType";
 
 export const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ export const router = createBrowserRouter([
       {
         path: "allPackages",
         element: <AllPackages></AllPackages>,
+      },
+      {
+        path: "tourType/:type",
+        element: <TourType></TourType>,
       },
     ],
   },

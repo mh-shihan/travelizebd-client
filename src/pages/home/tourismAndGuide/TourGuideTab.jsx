@@ -18,6 +18,7 @@ const TourGuideTab = () => {
 
   return (
     <div className="mt-10">
+      {isLoading && <Lottie animationData={loadingAnimation}></Lottie>}
       <div className="grid grid-cold-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {tourGuides.map((tourGuide) => (
           <TourGuideCard
@@ -26,7 +27,6 @@ const TourGuideTab = () => {
           ></TourGuideCard>
         ))}
       </div>
-      {isLoading && <Lottie animationData={loadingAnimation}></Lottie>}
     </div>
   );
 };

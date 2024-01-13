@@ -29,6 +29,7 @@ const TourGuideCard = ({ tourGuide }) => {
         </p>
       </div>
       <div className="mx-4 flex justify-center my-6">
+        {/* TODO: handleDetails for tour guide details */}
         <button className="btn btn-block btn-outline mx-4 border-yellow bg-yellow text-base-100">
           Details
         </button>

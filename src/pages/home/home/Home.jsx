@@ -1,5 +1,6 @@
 import SectionTitle from "../../../components/Sectiontitle";
 import Banner from "../banner/Banner";
+import TourTypes from "../tourTypes/TourTypes";
 import TourismAndGuide from "../tourismAndGuide/TourismAndGuide";
 
 const Home = () => {
@@ -15,6 +16,9 @@ const Home = () => {
             heading="Explore with Experts"
           ></SectionTitle>
           <TourismAndGuide></TourismAndGuide>
+        </section>
+        <section>
+          <TourTypes></TourTypes>
         </section>
       </main>
     </div>
