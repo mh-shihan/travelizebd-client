@@ -29,7 +29,7 @@ const OurPackagesTab = () => {
       </div>
       <div className="flex justify-center mt-10">
         <Link to="/allPackages">
-          <button className="btn btn-outline bg-yellow border-yellow text-xl  text-base-100">
+          <button className="btn btn-outline bg-yellow border-yellow text-lg  text-base-100">
             All Packages
           </button>
         </Link>
