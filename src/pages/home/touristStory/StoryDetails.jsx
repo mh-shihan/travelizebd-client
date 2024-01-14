@@ -2,11 +2,14 @@ import { useLoaderData } from "react-router-dom";
 import SectionTitle from "../../../components/Sectiontitle";
 import { FacebookIcon, FacebookShareButton } from "react-share";
 import { FaQuoteLeft, FaUser } from "react-icons/fa";
+import useAuth from "../../../hooks/useAuth";
 
 const StoryDetails = () => {
   const storyDetail = useLoaderData();
   console.log(storyDetail);
   const shareUrl = "https://www.facebook.com";
+  const { user } = useAuth();
+
   return (
     <div className="max-w-5xl mx-auto py-10 ">
       <SectionTitle
@@ -34,11 +37,19 @@ const StoryDetails = () => {
 
         <div className="flex justify-center items-center gap-4 mt-10">
           <h2 className="text-xl text-gray font-medium">Share Now</h2>
-          <button className="hover:transition-all hover:scale-125">
-            <FacebookShareButton url={shareUrl}>
-              <FacebookIcon size={40} round={true}></FacebookIcon>
-            </FacebookShareButton>
-          </button>
+          {user?.email ? (
+            <button className="hover:transition-all hover:scale-125">
+              <FacebookShareButton url={shareUrl}>
+                <FacebookIcon size={40} round={true}></FacebookIcon>
+              </FacebookShareButton>
+            </button>
+          ) : (
+            <button disabled className="cursor-none">
+              <FacebookShareButton url={shareUrl}>
+                <FacebookIcon size={40} round={true}></FacebookIcon>
+              </FacebookShareButton>
+            </button>
+          )}
         </div>
       </div>
     </div>

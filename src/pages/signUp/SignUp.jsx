@@ -110,7 +110,7 @@ const SignUp = () => {
             </div>
             <div className="form-control mt-6">
               <button className="btn btn-outline bg-slate-800 text-base-100">
-                Login
+                Register
               </button>
             </div>
             {errorMessage && <p className="text-red-600">{errorMessage}</p>}
@@ -118,7 +118,7 @@ const SignUp = () => {
             <p className="block mt-2 font-sans text-base antialiased font-normal leading-relaxed text-center text-gray-700">
               Already have an account?
               <Link to="/login">
-                <a className="font-medium text-gray-900">Login</a>
+                <a className="font-medium text-gray-900">login</a>
               </Link>
             </p>
           </form>

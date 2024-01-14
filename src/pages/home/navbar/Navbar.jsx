@@ -23,7 +23,7 @@ const Navbar = () => {
       </div>
       <ul
         tabIndex={0}
-        className=" dropdown-content z-[1] menu p-4 shadow-md bg-base-100 rounded-box  bg-transparent text-base-100 border  "
+        className=" dropdown-content z-[1] menu p-4 shadow-md  rounded-box  bg-black bg-opacity-50 text-base-100 border  "
       >
         <li>{user?.displayName}</li>
         <hr className="my-2" />
@@ -51,7 +51,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="bg-black bg-opacity-50 py-3 w-full z-[50] fixed top-0 mb-20 ">
+    <div className="bg-black bg-opacity-50 py-3 w-full z-[50] fixed mb-20 ">
       <div className=" max-w-7xl mx-auto">
         <div className="navbar  w-full">
           <div className="navbar-start">
@@ -78,7 +78,7 @@ const Navbar = () => {
               </div>
               <ul
                 tabIndex={0}
-                className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-slate-800 bg-opacity-85 rounded-box w-52"
+                className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-black bg-opacity-50 rounded-box w-52"
               >
                 <NavLinks></NavLinks>
               </ul>
