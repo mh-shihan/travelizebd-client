@@ -98,13 +98,7 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="navbar-end">
-            {user ? (
-              <Link to="/signUp">
-                <button className="btn btn-sm md:btn bg-yellow md:bg-yellow hover:scale-105 hover:bg-yellow hover:border-yellow text-base-100 md:text-base-100 border-yellow md:border-yellow px-1 ">
-                  Register
-                </button>
-              </Link>
-            ) : (
+            {!user && (
               <Link to="/login">
                 <button className="btn btn-sm md:btn bg-yellow md:bg-yellow hover:bg-yellow text-base-100 md:text-base-100 border-yellow md:border-yellow">
                   Login

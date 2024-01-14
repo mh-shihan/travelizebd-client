@@ -28,6 +28,7 @@ const ViewPackage = () => {
         </div>
         <Accordion viewPackage={viewPackage}></Accordion>
       </div>
+      {/* TODO: Tour guide profile page */}
     </div>
   );
 };
