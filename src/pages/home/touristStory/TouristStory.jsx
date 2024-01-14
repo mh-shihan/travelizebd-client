@@ -1,5 +1,5 @@
 import Lottie from "lottie-react";
-import SectionTitle from "../../../components/Sectiontitle";
+import SectionTitle from "../../../components/SectionTitle";
 import TouristStoryCard from "../../../components/TouristStoryCard";
 import useLoadingAnimation from "../../../hooks/useLoadingAnimation";
 import useTouristStory from "../../../hooks/useTouristStory";

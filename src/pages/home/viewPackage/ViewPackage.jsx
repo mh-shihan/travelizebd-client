@@ -3,6 +3,7 @@ import SectionTitle from "../../../components/SectionTitle";
 import PhotoAlbum from "react-photo-album";
 import ViewPackageCard from "./ViewPackageCard";
 import Accordion from "./Accordion";
+import BookingForm from "./BookingForm";
 
 const ViewPackage = () => {
   const viewPackage = useLoaderData();
@@ -14,7 +15,6 @@ const ViewPackage = () => {
     width: 600,
     height: 400,
   }));
-  console.log(photos);
   return (
     <div className="max-w-7xl mx-auto px-1 py-10">
       <SectionTitle
@@ -27,6 +27,10 @@ const ViewPackage = () => {
           <ViewPackageCard viewPackage={viewPackage}></ViewPackageCard>
         </div>
         <Accordion viewPackage={viewPackage}></Accordion>
+      </div>
+      <div>
+        <SectionTitle heading="Book Now" subheading="Hurry up"></SectionTitle>
+        <BookingForm viewPackage={viewPackage}></BookingForm>
       </div>
       {/* TODO: Tour guide profile page */}
     </div>
