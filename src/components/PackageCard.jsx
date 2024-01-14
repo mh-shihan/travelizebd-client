@@ -4,16 +4,15 @@ import { FaHeart } from "react-icons/fa6";
 import { TbCurrencyTaka } from "react-icons/tb";
 import useAxiosSecure from "../hooks/useAxiosSecure";
 import Swal from "sweetalert2";
+import { Link } from "react-router-dom";
 
 const PackageCard = ({ tourPackage }) => {
   const [isRed, setIsRed] = useState(false);
-  const [count, setCount] = useState(0);
   const axiosSecure = useAxiosSecure();
-  const { photo, price, title, type } = tourPackage;
+  const { photo, price, title, type, _id } = tourPackage;
 
   const handleHeartClick = async () => {
     setIsRed(!isRed);
-    setCount(count + 1);
 
     if (!isRed) {
       const wishlist = { photo, price, title, type };
@@ -57,11 +56,12 @@ const PackageCard = ({ tourPackage }) => {
           <h2 className="card-title">{title}</h2>
         </div>
         {/* TODO: handleClick for package details */}
-        {/* TODO: handleHeartClick to add to myWishList */}
-        <div className="card-actions justify-end items-end ">
-          <button className="btn btn-outline btn-block text-xl ">
-            View Package
-          </button>
+        <div className="card-actions justify-center items-end mt-4 w-full">
+          <Link to={`/viewPackage/${_id}`}>
+            <button className="btn btn-block btn-outline  text-xl ">
+              View Package
+            </button>
+          </Link>
         </div>
       </div>
     </div>

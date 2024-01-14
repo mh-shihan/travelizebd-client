@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { MdOutlineSportsBasketball } from "react-icons/md";
-import SectionTitle from "../../../components/Sectiontitle";
+import SectionTitle from "../../../components/SectionTitle";
 import { FaWalking } from "react-icons/fa";
 import { FaSafari } from "react-icons/fa";
 import { FaSailboat } from "react-icons/fa6";
