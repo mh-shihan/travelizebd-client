@@ -1,10 +1,13 @@
 import { useLoaderData } from "react-router-dom";
 import SectionTitle from "../../../components/SectionTitle";
 import PhotoAlbum from "react-photo-album";
+import ViewPackageCard from "./ViewPackageCard";
+import Accordion from "./Accordion";
 
 const ViewPackage = () => {
   const viewPackage = useLoaderData();
   const { photo, price, title, type, gallery, dayOne, dayTwo } = viewPackage;
+
   //   console.log(viewPackage);
   const photos = gallery.map((photo) => ({
     src: photo,
@@ -20,6 +23,10 @@ const ViewPackage = () => {
       ></SectionTitle>
       <div className="bg-[#f6f8f9] p-10">
         <PhotoAlbum layout="rows" photos={photos} />
+        <div className="mt-10">
+          <ViewPackageCard viewPackage={viewPackage}></ViewPackageCard>
+        </div>
+        <Accordion viewPackage={viewPackage}></Accordion>
       </div>
     </div>
   );
