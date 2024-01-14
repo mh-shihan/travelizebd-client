@@ -2,14 +2,35 @@ import { useState } from "react";
 import { FaRegHeart } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa6";
 import { TbCurrencyTaka } from "react-icons/tb";
+import useAxiosSecure from "../hooks/useAxiosSecure";
+import Swal from "sweetalert2";
 
 const PackageCard = ({ tourPackage }) => {
   const [isRed, setIsRed] = useState(false);
-  const handleHeartClick = () => {
+  const [count, setCount] = useState(0);
+  const axiosSecure = useAxiosSecure();
+  const { photo, price, title, type } = tourPackage;
+
+  const handleHeartClick = async () => {
     setIsRed(!isRed);
+    setCount(count + 1);
+
+    if (!isRed) {
+      const wishlist = { photo, price, title, type };
+      const res = await axiosSecure.post("/user/wishlists", wishlist);
+      // console.log(res.data);
+      if (res.data.insertedId) {
+        Swal.fire({
+          position: "top-end",
+          icon: "success",
+          title: `${title} added to your wishlist`,
+          showConfirmButton: false,
+          timer: 1500,
+        });
+      }
+    }
   };
 
-  const { photo, price, title, type } = tourPackage;
   return (
     <div className="card card-compact bg-base-100 shadow-xl relative rounded-t-xl  hover:transition-all hover:scale-105">
       <img src={photo} className="rounded-xl" />
