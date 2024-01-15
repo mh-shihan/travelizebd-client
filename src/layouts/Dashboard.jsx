@@ -2,14 +2,18 @@ import { Outlet } from "react-router-dom";
 import Navbar from "../pages/home/navbar/Navbar";
 import Footer from "../pages/home/footer/Footer";
 import useAuth from "../hooks/useAuth";
+import DashboardLinks from "../pages/dashboard/DashboardLinks";
+import AOS from "aos";
 
 const Dashboard = () => {
   const { user } = useAuth();
+  // ..
+  AOS.init();
   return (
     <div>
       <Navbar></Navbar>
-      <div className="max-w-7xl mx-auto  grid grid-cols-12  pt-24">
-        <div className=" col-span-3 lg:col-span-3 min-h-screen pt-8 border">
+      <div className="max-w-7xl mx-auto px-1  grid grid-cols-12  pt-24">
+        <div className=" col-span-3 lg:col-span-3 min-h-screen pt-8 border-2 border-r-transparent border-yellow">
           <div className="flex gap-3 justify-center items-center">
             <img
               src={user?.photoURL}
@@ -18,16 +22,14 @@ const Dashboard = () => {
             />
             <div>
               <h2 className="text-xl font-medium">{user?.displayName}</h2>
-              <p>Role</p>
+              <p className="text-sm">Role</p>
             </div>
           </div>
-          <ul className="menu  font-inter mt-6">
-            <li>Home</li>
-            <li>Update</li>
-            <li>Profile</li>
+          <ul className="menu font-inter  text-base mt-2 font-light">
+            <DashboardLinks></DashboardLinks>
           </ul>
         </div>
-        <div className="col-span-9 lg:col-span-9 border">
+        <div className="col-span-9 lg:col-span-9 border-2 border-yellow p-10 ">
           <Outlet></Outlet>
         </div>
       </div>

@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import { MdOutlineSportsBasketball } from "react-icons/md";
-import SectionTitle from "../../../components/SectionTitle";
 import { FaWalking } from "react-icons/fa";
 import { FaSafari } from "react-icons/fa";
 import { FaSailboat } from "react-icons/fa6";
 import { IoAirplane } from "react-icons/io5";
 import { GiHiking } from "react-icons/gi";
+import SectionTitle from "../../../components/Sectiontitle";
 
 const TourTypes = () => {
   return (

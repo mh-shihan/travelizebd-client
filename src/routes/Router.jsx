@@ -10,6 +10,9 @@ import AllTouristStory from "../pages/home/touristStory/AllTouristStory";
 import StoryDetails from "../pages/home/touristStory/StoryDetails";
 import ViewPackage from "../pages/home/viewPackage/ViewPackage";
 import Dashboard from "../layouts/Dashboard";
+import MyBookings from "../pages/dashboard/MyBookings";
+import DashboardHome from "../pages/dashboard/DashboardHome";
+import Profile from "../pages/dashboard/Profile";
 
 export const router = createBrowserRouter([
   {
@@ -60,5 +63,19 @@ export const router = createBrowserRouter([
     path: "dashboard",
     errorElement: <ErrorPage></ErrorPage>,
     element: <Dashboard></Dashboard>,
+    children: [
+      {
+        path: "/dashboard",
+        element: <DashboardHome></DashboardHome>,
+      },
+      {
+        path: "myBookings",
+        element: <MyBookings></MyBookings>,
+      },
+      {
+        path: "profile",
+        element: <Profile></Profile>,
+      },
+    ],
   },
 ]);
