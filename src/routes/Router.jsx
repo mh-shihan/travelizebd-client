@@ -9,6 +9,7 @@ import TourType from "../pages/home/tourTypes/TourType";
 import AllTouristStory from "../pages/home/touristStory/AllTouristStory";
 import StoryDetails from "../pages/home/touristStory/StoryDetails";
 import ViewPackage from "../pages/home/viewPackage/ViewPackage";
+import Dashboard from "../layouts/Dashboard";
 
 export const router = createBrowserRouter([
   {
@@ -53,5 +54,11 @@ export const router = createBrowserRouter([
           fetch(`http://localhost:5000/api/v1/viewPackages/${params.id}`),
       },
     ],
+  },
+  // Dashboard
+  {
+    path: "dashboard",
+    errorElement: <ErrorPage></ErrorPage>,
+    element: <Dashboard></Dashboard>,
   },
 ]);

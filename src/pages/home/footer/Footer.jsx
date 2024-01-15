@@ -1,4 +1,5 @@
 import { FaLinkedinIn } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -7,8 +8,10 @@ const Footer = () => {
         <div className="md:flex md:justify-between">
           <div className="space-y-2 mb-2 md:mb-0">
             <div className=" text-3xl md:text-5xl text-center">
-              <span className="text-white font-bold">Travelize</span>
-              <span className="font-extrabold text-yellow">BD</span>
+              <Link to="/">
+                <span className="text-white font-bold">Travelize</span>
+                <span className="font-extrabold text-yellow">BD</span>
+              </Link>
             </div>
             <p className="text-slate-100 text-xl md:text-2xl font-medium text-center">
               Discover Bangladesh

@@ -30,9 +30,11 @@ const Navbar = () => {
         <li>{user?.email}</li>
         <hr className="mt-2" />
         <li>
-          <button className="hover:bg-transparent hover:text-yellow ">
-            Dashboard
-          </button>
+          <Link to="/dashboard">
+            <button className="hover:bg-transparent hover:text-yellow ">
+              Dashboard
+            </button>
+          </Link>
         </li>
         <hr />
         <li>
