@@ -14,6 +14,7 @@ import MyBookings from "../pages/dashboard/MyBookings";
 import DashboardHome from "../pages/dashboard/DashboardHome";
 import Profile from "../pages/dashboard/Profile";
 import PrivateRoute from "./PrivateRoute";
+import Wishlist from "../pages/dashboard/Wishlist";
 
 export const router = createBrowserRouter([
   {
@@ -73,13 +74,18 @@ export const router = createBrowserRouter([
         path: "/dashboard",
         element: <DashboardHome></DashboardHome>,
       },
+
+      {
+        path: "profile",
+        element: <Profile></Profile>,
+      },
       {
         path: "myBookings",
         element: <MyBookings></MyBookings>,
       },
       {
-        path: "profile",
-        element: <Profile></Profile>,
+        path: "wishlist",
+        element: <Wishlist></Wishlist>,
       },
     ],
   },

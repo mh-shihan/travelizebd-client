@@ -1,6 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import useAxiosSecure from "../../hooks/useAxiosSecure";
 import useAuth from "../../hooks/useAuth";
+import { TbCurrencyTaka } from "react-icons/tb";
 
 const MyBookings = () => {
   const { user } = useAuth();
@@ -13,18 +14,20 @@ const MyBookings = () => {
       return res.data;
     },
   });
-  console.log(bookings);
+
   return (
-    <div>
+    <div data-aos="fade-left">
       <div className="overflow-x-auto">
         <table className="table">
           {/* head */}
-          <thead>
+          <thead className="bg-[#f6f8f9]">
             <tr>
               <th>#</th>
               <th>Package Name</th>
               <th>Guide Name</th>
-              <th>Price</th>
+              <th className="flex items-center">
+                Price <TbCurrencyTaka />
+              </th>
               <th>Date</th>
               <th>Status</th>
             </tr>
