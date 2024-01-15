@@ -6,9 +6,11 @@ import { useForm } from "react-hook-form";
 import useAuth from "../../hooks/useAuth";
 import Swal from "sweetalert2";
 import SocialLogin from "../../shared/socialLogin/SocialLogin";
+import { FaEye, FaEyeSlash } from "react-icons/fa6";
 
 const Login = () => {
   const [errorMessage, setErrorMessage] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
   const { signIn } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
@@ -28,13 +30,17 @@ const Login = () => {
             timer: 1500,
           });
           reset();
-          navigate(location?.state ? location.state : "/");
+          navigate(location?.state ? location.state : "/", { replace: true });
         }
       })
       .catch((error) => {
         const err = error.message;
         setErrorMessage(err);
       });
+  };
+
+  const handleShowPassword = () => {
+    setShowPassword(!showPassword);
   };
 
   return (
@@ -69,14 +75,31 @@ const Login = () => {
               <label className="label">
                 <span className="label-text">Password</span>
               </label>
-              <input
-                type="password"
-                name="password"
-                {...register("password")}
-                placeholder="password"
-                className="input input-bordered"
-                required
-              />
+              <div className="relative">
+                <input
+                  type={showPassword ? "text" : "password"}
+                  name="password"
+                  {...register("password")}
+                  placeholder="password"
+                  className="input input-bordered w-full"
+                  required
+                />
+                {showPassword ? (
+                  <span
+                    onClick={handleShowPassword}
+                    className="absolute right-2 top-4 cursor-pointer"
+                  >
+                    <FaEyeSlash />
+                  </span>
+                ) : (
+                  <span
+                    onClick={handleShowPassword}
+                    className="absolute right-2 top-4 cursor-pointer"
+                  >
+                    <FaEye />
+                  </span>
+                )}
+              </div>
 
               {/* TODO: Eye icon for see the password */}
             </div>

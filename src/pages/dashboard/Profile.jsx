@@ -1,8 +1,9 @@
 import useAuth from "../../hooks/useAuth";
-import "aos/dist/aos.css"; // You can also use <link> for styles
+import "aos/dist/aos.css";
 
 const Profile = () => {
   const { user } = useAuth();
+  //   TODO: Your role related work hove to be finished
 
   return (
     <div data-aos="fade-left">

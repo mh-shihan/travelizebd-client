@@ -6,11 +6,16 @@ import Swal from "sweetalert2";
 import signUpAnimation from "../../assets/animation/signup-animation.json";
 import Lottie from "lottie-react";
 import SocialLogin from "../../shared/socialLogin/SocialLogin";
+import useAxiosPublic from "../../hooks/useAxiosPublic";
+import { FaEye, FaEyeSlash } from "react-icons/fa6";
 
 const SignUp = () => {
   const [errorMessage, setErrorMessage] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
+
   const { createUser, updateUser } = useAuth();
   const navigate = useNavigate();
+  const axiosPublic = useAxiosPublic();
 
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
@@ -25,21 +30,34 @@ const SignUp = () => {
         console.log(res.user);
 
         if (res?.user) {
-          updateUser(name, photo).then(() => {});
-          Swal.fire({
-            icon: "success",
-            title: "Registration Successful",
-            showConfirmButton: false,
-            timer: 1500,
+          updateUser(name, photo).then(() => {
+            const userInfo = {
+              name,
+              email,
+            };
+            axiosPublic.post("/users", userInfo).then((res) => {
+              if (res.data.insertedId) {
+                Swal.fire({
+                  icon: "success",
+                  title: "Registration Successful",
+                  showConfirmButton: false,
+                  timer: 1500,
+                });
+              }
+            });
+            reset();
+            navigate("/login");
           });
-          reset();
-          navigate("/login");
         }
       })
       .catch((error) => {
         const err = error.message;
         setErrorMessage(err);
       });
+  };
+
+  const handleShowPassword = () => {
+    setShowPassword(!showPassword);
   };
 
   return (
@@ -94,18 +112,35 @@ const SignUp = () => {
                 className="input input-bordered"
               />
             </div>
-            <div className="form-control">
+            <div className="form-control ">
               <label className="label">
                 <span className="label-text">Password</span>
               </label>
-              <input
-                type="password"
-                name="password"
-                {...register("password")}
-                placeholder="password"
-                className="input input-bordered"
-                required
-              />
+              <div className="relative">
+                <input
+                  type={showPassword ? "text" : "password"}
+                  name="password"
+                  {...register("password")}
+                  placeholder="password"
+                  className="input input-bordered w-full"
+                  required
+                />
+                {showPassword ? (
+                  <span
+                    onClick={handleShowPassword}
+                    className="absolute right-2 top-4 cursor-pointer"
+                  >
+                    <FaEyeSlash />
+                  </span>
+                ) : (
+                  <span
+                    onClick={handleShowPassword}
+                    className="absolute right-2 top-4 cursor-pointer"
+                  >
+                    <FaEye />
+                  </span>
+                )}
+              </div>
               {/* TODO: Eye icon for see the password */}
             </div>
             <div className="form-control mt-6">

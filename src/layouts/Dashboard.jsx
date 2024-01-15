@@ -13,7 +13,7 @@ const Dashboard = () => {
     <div>
       <Navbar></Navbar>
       <div className="max-w-7xl mx-auto px-1  grid grid-cols-12  pt-24">
-        <div className=" col-span-3 lg:col-span-3 min-h-screen pt-8 border-2 border-r-transparent border-yellow">
+        <div className=" col-span-3 lg:col-span-3 min-h-screen pt-8 border-2 border-r-transparent border-base-300">
           <div className="flex gap-3 justify-center items-center">
             <img
               src={user?.photoURL}
@@ -29,7 +29,7 @@ const Dashboard = () => {
             <DashboardLinks></DashboardLinks>
           </ul>
         </div>
-        <div className="col-span-9 lg:col-span-9 border-2 border-yellow p-10 ">
+        <div className="col-span-9 lg:col-span-9 border-2 border-base-300 p-10 ">
           <Outlet></Outlet>
         </div>
       </div>
