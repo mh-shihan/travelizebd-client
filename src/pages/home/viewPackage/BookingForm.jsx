@@ -3,11 +3,13 @@ import useAuth from "../../../hooks/useAuth";
 import { TbCurrencyTaka } from "react-icons/tb";
 import useAxiosSecure from "../../../hooks/useAxiosSecure";
 import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
 
 const BookingForm = ({ viewPackage }) => {
   const { user } = useAuth();
   const axiosSecure = useAxiosSecure();
-  const { price } = viewPackage;
+  const { title, price } = viewPackage;
+  const navigate = useNavigate();
 
   const {
     register,
@@ -19,19 +21,28 @@ const BookingForm = ({ viewPackage }) => {
     const name = data.name || user?.displayName;
     const email = data.email || user?.email;
     const photo = data.phot || user?.photoURL;
+    const packageName = title;
     const guide = data.guide;
     const date = data.date;
     const PackagePrice = parseFloat(data.price || price);
 
-    const bookingInfo = { email, name, photo, guide, date, PackagePrice };
+    const bookingInfo = {
+      email,
+      name,
+      photo,
+      packageName,
+      PackagePrice,
+      guide,
+      date,
+    };
     console.log(bookingInfo);
     const res = await axiosSecure.post("/user/bookings", bookingInfo);
     if (res.data?.insertedId) {
+      navigate("/dashboard/myBookings");
       Swal.fire({
         title: "Booking Successful!",
         text: "Your booking is confirmed",
         icon: "success",
-        // TODO: navigate to booking page
       });
     }
   };
