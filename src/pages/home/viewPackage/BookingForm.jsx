@@ -117,7 +117,7 @@ const BookingForm = ({ viewPackage }) => {
           </span>
         </div>
         <input
-          type="text"
+          type="number"
           defaultValue={price}
           name="price"
           {...register("price")}

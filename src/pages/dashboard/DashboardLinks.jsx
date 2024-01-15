@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { BiSolidDashboard } from "react-icons/bi";
+import { CgProfile } from "react-icons/cg";
 
 const DashboardLinks = () => {
   return (
@@ -32,7 +33,7 @@ const DashboardLinks = () => {
           }}
           to="/dashboard/profile"
         >
-          <BiSolidDashboard />
+          <CgProfile />
           Profile
         </NavLink>
       </li>

@@ -1,6 +1,6 @@
 import Lottie from "lottie-react";
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import loginAnimation from "../../assets/animation/login-animation.json";
 import { useForm } from "react-hook-form";
 import useAuth from "../../hooks/useAuth";
@@ -11,6 +11,7 @@ const Login = () => {
   const [errorMessage, setErrorMessage] = useState("");
   const { signIn } = useAuth();
   const navigate = useNavigate();
+  const location = useLocation();
 
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
@@ -27,7 +28,7 @@ const Login = () => {
             timer: 1500,
           });
           reset();
-          navigate("/");
+          navigate(location?.state ? location.state : "/");
         }
       })
       .catch((error) => {

@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 
 const DashboardHome = () => {
@@ -24,12 +24,11 @@ const DashboardHome = () => {
               ? "You can definitely use our service to send gifts to loved ones"
               : "We are blessed to have a delivery man like you."}{" "}
           </h2>
-          <NavLink to={"/dashboard/profile"}>
-            {" "}
+          <Link to={"/dashboard/profile"}>
             <button className="self-start px-10 py-3 text-lg font-medium rounded-3xl mt-6 bg-red-500 hover:bg-red-600 text-white ">
               View Profile
             </button>
-          </NavLink>
+          </Link>
         </div>
       </div>
     </section>

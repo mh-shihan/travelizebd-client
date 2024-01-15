@@ -21,7 +21,7 @@ const MainLayouts = () => {
   return (
     <div>
       {!noHeaderFooter && <Navbar></Navbar>}
-      <div data-aos="fade-up" className="">
+      <div data-aos="fade-down" className="">
         <Outlet></Outlet>
       </div>
       {!noHeaderFooter && <Footer></Footer>}
