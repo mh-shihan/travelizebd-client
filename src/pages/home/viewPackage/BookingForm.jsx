@@ -1,18 +1,21 @@
 import { useForm } from "react-hook-form";
 import useAuth from "../../../hooks/useAuth";
 import { TbCurrencyTaka } from "react-icons/tb";
+import useAxiosSecure from "../../../hooks/useAxiosSecure";
+import Swal from "sweetalert2";
 
 const BookingForm = ({ viewPackage }) => {
   const { user } = useAuth();
-  const { photo, price, title, type, gallery, dayOne, dayTwo } = viewPackage;
+  const axiosSecure = useAxiosSecure();
+  const { price } = viewPackage;
 
   const {
     register,
     handleSubmit,
-    reset,
+    // reset,
     // formState: { errors },
   } = useForm();
-  const onSubmit = (data) => {
+  const onSubmit = async (data) => {
     const name = data.name || user?.displayName;
     const email = data.email || user?.email;
     const photo = data.phot || user?.photoURL;
@@ -20,7 +23,17 @@ const BookingForm = ({ viewPackage }) => {
     const date = data.date;
     const PackagePrice = parseFloat(data.price || price);
 
-    console.log({ email, name, photo, guide, date, PackagePrice });
+    const bookingInfo = { email, name, photo, guide, date, PackagePrice };
+    console.log(bookingInfo);
+    const res = await axiosSecure.post("/user/bookings", bookingInfo);
+    if (res.data?.insertedId) {
+      Swal.fire({
+        title: "Booking Successful!",
+        text: "Your booking is confirmed",
+        icon: "success",
+        // TODO: navigate to booking page
+      });
+    }
   };
 
   const guideNames = [
@@ -70,6 +83,7 @@ const BookingForm = ({ viewPackage }) => {
             <span className="label-text flex items-center">Date*</span>
           </div>
           <input
+            required
             type="date"
             name="date"
             defaultValue={() => new Date()}
@@ -125,9 +139,18 @@ const BookingForm = ({ viewPackage }) => {
         />
       </label>
       <div className="flex justify-center  ">
-        <button className="btn btn-outline mt-6 px-10 bg-yellow text-base-100">
-          Book Now
-        </button>
+        {user?.email ? (
+          <button className="btn btn-outline mt-6 px-10 bg-yellow text-base-100">
+            Book Now
+          </button>
+        ) : (
+          <button
+            disabled
+            className="btn btn-outline mt-6 px-10 bg-yellow text-base-100"
+          >
+            Book Now
+          </button>
+        )}
       </div>
     </form>
   );
