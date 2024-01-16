@@ -5,17 +5,19 @@ import { TbCurrencyTaka } from "react-icons/tb";
 import useAxiosSecure from "../hooks/useAxiosSecure";
 import Swal from "sweetalert2";
 import { Link } from "react-router-dom";
+import useAuth from "../hooks/useAuth";
 
 const PackageCard = ({ tourPackage }) => {
   const [isRed, setIsRed] = useState(false);
   const axiosSecure = useAxiosSecure();
+  const { user } = useAuth();
   const { photo, price, title, type, _id } = tourPackage;
 
   const handleHeartClick = async () => {
     setIsRed(!isRed);
 
     if (!isRed) {
-      const wishlist = { photo, price, title, type };
+      const wishlist = { photo, price, title, type, email: user?.email };
       const res = await axiosSecure.post("/user/wishlists", wishlist);
       // console.log(res.data);
       if (res.data.insertedId) {
@@ -55,7 +57,6 @@ const PackageCard = ({ tourPackage }) => {
           <h2 className="card-title">{type}</h2>
           <h2 className="card-title">{title}</h2>
         </div>
-        {/* TODO: handleClick for package details */}
         <div className="card-actions justify-center items-end mt-4 w-full">
           <Link to={`/viewPackage/${_id}`}>
             <button className="btn btn-block btn-outline  text-xl ">

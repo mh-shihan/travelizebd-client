@@ -100,8 +100,6 @@ const Login = () => {
                   </span>
                 )}
               </div>
-
-              {/* TODO: Eye icon for see the password */}
             </div>
             <div className="form-control mt-6">
               <button className="btn btn-outline text-2xl">Login</button>

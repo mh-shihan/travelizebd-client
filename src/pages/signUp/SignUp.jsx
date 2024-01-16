@@ -141,7 +141,6 @@ const SignUp = () => {
                   </span>
                 )}
               </div>
-              {/* TODO: Eye icon for see the password */}
             </div>
             <div className="form-control mt-6">
               <button className="btn btn-outline bg-slate-800 text-base-100">

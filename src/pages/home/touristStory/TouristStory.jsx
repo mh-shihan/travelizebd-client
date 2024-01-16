@@ -1,10 +1,10 @@
 import Lottie from "lottie-react";
-import SectionTitle from "../../../components/SectionTitle";
 import TouristStoryCard from "../../../components/TouristStoryCard";
 import useLoadingAnimation from "../../../hooks/useLoadingAnimation";
 import useTouristStory from "../../../hooks/useTouristStory";
 import CommonBtn from "../../../components/CommonBtn";
 import { Link } from "react-router-dom";
+import SectionTitle from "../../../components/Sectiontitle";
 
 const TouristStory = () => {
   const loadingAnimation = useLoadingAnimation();

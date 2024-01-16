@@ -9,7 +9,7 @@ import SectionTitle from "../../../components/Sectiontitle";
 
 const TourTypes = () => {
   return (
-    <div className="pt-10">
+    <div data-aos="fade-left" className="pt-10">
       <SectionTitle
         heading="Our best Events"
         subheading="Check it out"

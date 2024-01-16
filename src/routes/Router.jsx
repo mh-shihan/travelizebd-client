@@ -15,6 +15,8 @@ import DashboardHome from "../pages/dashboard/DashboardHome";
 import Profile from "../pages/dashboard/Profile";
 import PrivateRoute from "./PrivateRoute";
 import Wishlist from "../pages/dashboard/Wishlist";
+import AddPackage from "../pages/dashboard/admin/AddPackage";
+import ManageUsers from "../pages/dashboard/admin/ManageUsers";
 
 export const router = createBrowserRouter([
   {
@@ -86,6 +88,15 @@ export const router = createBrowserRouter([
       {
         path: "wishlist",
         element: <Wishlist></Wishlist>,
+      },
+      // Admin Routes
+      {
+        path: "addPackage",
+        element: <AddPackage></AddPackage>,
+      },
+      {
+        path: "manageUsers",
+        element: <ManageUsers></ManageUsers>,
       },
     ],
   },
