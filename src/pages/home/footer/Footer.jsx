@@ -34,6 +34,8 @@ const Footer = () => {
                 <li>
                   <a
                     href="https://tailwindcss.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="hover:underline"
                   >
                     Tailwind CSS
@@ -49,6 +51,8 @@ const Footer = () => {
                 <li className="mb-4">
                   <a
                     href="https://github.com/MHShihan"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="hover:underline "
                   >
                     Github
@@ -57,6 +61,8 @@ const Footer = () => {
                 <li>
                   <a
                     href="https://www.linkedin.com/in/mh-shihan-585850177/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="hover:underline"
                   >
                     LinkedIn

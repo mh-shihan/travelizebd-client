@@ -73,7 +73,7 @@ const NavLinks = () => {
               viewTransitionName: isTransitioning ? "slide" : "",
             };
           }}
-          to="/contactUs"
+          to="/contact"
         >
           Contact Us
         </NavLink>

@@ -21,6 +21,7 @@ import AdminRoute from "./AdminRoute";
 import TourGuideRoute from "./TourGuideRoute";
 import MyAssignedTour from "../pages/dashboard/tourGuide/MyAssignedTour";
 import About from "../pages/about/About";
+import Contact from "../pages/contact/Contact";
 
 export const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ export const router = createBrowserRouter([
       {
         path: "about",
         element: <About></About>,
+      },
+      {
+        path: "contact",
+        element: <Contact></Contact>,
       },
       {
         path: "signUp",
