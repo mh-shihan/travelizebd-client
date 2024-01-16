@@ -41,7 +41,9 @@ const MyBookings = () => {
                 <td>{booking.guide}</td>
                 <td>{booking.PackagePrice}</td>
                 <td>{booking.date}</td>
-                <td>In Review</td>
+                <td className="uppercase">
+                  {booking?.packageStatus ? booking.packageStatus : "In Review"}
+                </td>
               </tr>
             ))}
           </tbody>

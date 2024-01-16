@@ -4,6 +4,7 @@ import useAxiosSecure from "../../hooks/useAxiosSecure";
 import { TbCurrencyTaka } from "react-icons/tb";
 import { BsTrashFill } from "react-icons/bs";
 import Swal from "sweetalert2";
+import { Link } from "react-router-dom";
 
 const Wishlist = () => {
   const { user } = useAuth();
@@ -79,7 +80,10 @@ const Wishlist = () => {
 
               <td>{wishlist.price}</td>
               <th>
-                <button className="btn btn-ghost btn-xs">details</button>
+                <Link to={`/viewPackage/${wishlist.id}`}>
+                  {" "}
+                  <button className="btn btn-ghost btn-xs">details</button>
+                </Link>
               </th>
               <th>
                 <button

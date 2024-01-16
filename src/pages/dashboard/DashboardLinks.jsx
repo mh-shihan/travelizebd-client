@@ -6,11 +6,11 @@ import { MdAddCard } from "react-icons/md";
 import { FaUsersCog } from "react-icons/fa";
 import useAdmin from "../../hooks/useAdmin";
 import useIsTourGuide from "../../hooks/useisTourGuide";
+import { BsFillBookmarkPlusFill } from "react-icons/bs";
 
 const DashboardLinks = () => {
   const { isAdmin } = useAdmin();
   const { isTourGuide } = useIsTourGuide();
-  console.log(isTourGuide);
   return (
     <>
       {isAdmin?.admin === true ? (
@@ -99,22 +99,6 @@ const DashboardLinks = () => {
               Dashboard
             </NavLink>
           </li>
-          <li>
-            <NavLink
-              style={({ isActive, isTransitioning }) => {
-                return {
-                  background: isActive ? "transparent" : "",
-                  fontWeight: isActive ? "" : "",
-                  color: isActive ? "#F7B801" : "",
-                  viewTransitionName: isTransitioning ? "slide" : "",
-                };
-              }}
-              to="/dashboard/wishlist"
-            >
-              <MdBookmarkAdd className="text-lg" />
-              Tour Guide
-            </NavLink>
-          </li>
 
           <li>
             <NavLink
@@ -130,6 +114,22 @@ const DashboardLinks = () => {
             >
               <CgProfile className="text-lg" />
               Profile
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              style={({ isActive, isTransitioning }) => {
+                return {
+                  background: isActive ? "transparent" : "",
+                  fontWeight: isActive ? "" : "",
+                  color: isActive ? "#F7B801" : "",
+                  viewTransitionName: isTransitioning ? "slide" : "",
+                };
+              }}
+              to="/dashboard/myAssignedTour"
+            >
+              <BsFillBookmarkPlusFill className="text-lg" />
+              My Assigned Tour
             </NavLink>
           </li>
         </>

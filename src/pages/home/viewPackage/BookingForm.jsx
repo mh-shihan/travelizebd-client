@@ -37,7 +37,6 @@ const BookingForm = ({ viewPackage }) => {
       guide,
       date,
     };
-    console.log(bookingInfo);
     const res = await axiosSecure.post("/user/bookings", bookingInfo);
     if (res.data?.insertedId) {
       navigate("/dashboard/myBookings");

@@ -18,6 +18,9 @@ import Wishlist from "../pages/dashboard/Wishlist";
 import AddPackage from "../pages/dashboard/admin/AddPackage";
 import ManageUsers from "../pages/dashboard/admin/ManageUsers";
 import AdminRoute from "./AdminRoute";
+import TourGuideRoute from "./TourGuideRoute";
+import MyAssignedTour from "../pages/dashboard/tourGuide/MyAssignedTour";
+import About from "../pages/about/About";
 
 export const router = createBrowserRouter([
   {
@@ -28,6 +31,10 @@ export const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+      },
+      {
+        path: "about",
+        element: <About></About>,
       },
       {
         path: "signUp",
@@ -105,6 +112,15 @@ export const router = createBrowserRouter([
           <AdminRoute>
             <ManageUsers></ManageUsers>
           </AdminRoute>
+        ),
+      },
+      // Tour guide route
+      {
+        path: "myAssignedTour",
+        element: (
+          <TourGuideRoute>
+            <MyAssignedTour></MyAssignedTour>
+          </TourGuideRoute>
         ),
       },
     ],

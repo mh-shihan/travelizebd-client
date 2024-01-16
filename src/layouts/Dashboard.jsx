@@ -32,8 +32,10 @@ const Dashboard = () => {
               alt=""
             />
             <div>
-              <h2 className="text-xl font-medium">{user?.displayName}</h2>
-              <p className="text-sm">
+              <h2 className="text-lg font-medium uppercase">
+                {user?.displayName}
+              </h2>
+              <p className="text-xs uppercase">
                 {profileUser?.role ? profileUser?.role : "tourist"}
               </p>
             </div>

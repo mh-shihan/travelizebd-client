@@ -3,15 +3,12 @@ import useUsers from "../../../hooks/useUsers";
 import { MdAdminPanelSettings } from "react-icons/md";
 import useAxiosSecure from "../../../hooks/useAxiosSecure";
 import { FaPeoplePulling } from "react-icons/fa6";
-import { useState } from "react";
 
 const ManageUsers = () => {
   const [users, refetch] = useUsers();
   const axiosSecure = useAxiosSecure();
-  const [disabledRow, setDisabledRow] = useState([]);
 
-  const handleMakeAdmin = (id, name, rowIndex) => {
-    console.log(rowIndex);
+  const handleMakeAdmin = (id, name) => {
     Swal.fire({
       title: "Are you sure?",
       text: "Do you want make the use as admin?",
@@ -27,7 +24,6 @@ const ManageUsers = () => {
         });
 
         if (res.data?.modifiedCount > 0) {
-          setDisabledRow((prevRowIndex) => [...prevRowIndex, rowIndex]);
           refetch();
           Swal.fire({
             title: "Admin!",
@@ -39,7 +35,7 @@ const ManageUsers = () => {
     });
   };
 
-  const handleMakeTourGuide = (id, name, rowIndex) => {
+  const handleMakeTourGuide = (id, name) => {
     Swal.fire({
       title: "Are you sure?",
       text: "Do you want make the use as tour guide?",
@@ -55,7 +51,6 @@ const ManageUsers = () => {
         });
 
         if (res.data?.modifiedCount > 0) {
-          setDisabledRow((prevRowIndex) => [...prevRowIndex, rowIndex]);
           refetch();
           Swal.fire({
             title: "Tour Guide!",
@@ -71,7 +66,7 @@ const ManageUsers = () => {
     <div data-aos="fade-left" className="overflow-x-auto">
       <table className="table">
         {/* head */}
-        <thead className="bg-[#f6f8f9]">
+        <thead>
           <tr>
             <th>#</th>
             <th>Name</th>
@@ -92,10 +87,13 @@ const ManageUsers = () => {
               <td>
                 {user?.role === "admin" ? (
                   "Admin"
+                ) : user?.role === "tour guide" ? (
+                  <button className="btn btn-ghost btn-xs" disabled>
+                    <MdAdminPanelSettings className="text-2xl text-yellow " />
+                  </button>
                 ) : (
                   <button
-                    onClick={() => handleMakeAdmin(user._id, user.name, index)}
-                    disabled={disabledRow.includes(index)}
+                    onClick={() => handleMakeAdmin(user._id, user.name)}
                     className="btn btn-ghost btn-xs"
                   >
                     <MdAdminPanelSettings className="text-2xl text-yellow " />
@@ -105,12 +103,13 @@ const ManageUsers = () => {
               <td>
                 {user?.role === "tour guide" ? (
                   "Tour Guide"
+                ) : user?.role === "admin" ? (
+                  <button disabled className="btn btn-ghost btn-xs ">
+                    <FaPeoplePulling className="text-2xl text-red-500" />
+                  </button>
                 ) : (
                   <button
-                    onClick={() =>
-                      handleMakeTourGuide(user._id, user.name, index)
-                    }
-                    disabled={disabledRow.includes(index)}
+                    onClick={() => handleMakeTourGuide(user._id, user.name)}
                     className="btn btn-ghost btn-xs "
                   >
                     <FaPeoplePulling className="text-2xl text-red-500" />

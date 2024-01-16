@@ -17,7 +17,14 @@ const PackageCard = ({ tourPackage }) => {
     setIsRed(!isRed);
 
     if (!isRed) {
-      const wishlist = { photo, price, title, type, email: user?.email };
+      const wishlist = {
+        photo,
+        price,
+        title,
+        type,
+        email: user?.email,
+        id: _id,
+      };
       const res = await axiosSecure.post("/user/wishlists", wishlist);
       // console.log(res.data);
       if (res.data.insertedId) {

@@ -58,7 +58,7 @@ const NavLinks = () => {
               viewTransitionName: isTransitioning ? "slide" : "",
             };
           }}
-          to="/aboutUs"
+          to="/about"
         >
           About Us
         </NavLink>
