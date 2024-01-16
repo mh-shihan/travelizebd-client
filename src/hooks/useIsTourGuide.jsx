@@ -6,7 +6,7 @@ const useIsTourGuide = () => {
   const { user } = useAuth();
   const axiosSecure = useAxiosSecure();
 
-  const { data: isTourGuide = false } = useQuery({
+  const { data: isTourGuide = false, isLoading: tourGuideLoading } = useQuery({
     queryKey: ["roleOFTourGuide"],
     queryFn: async () => {
       const res = await axiosSecure.get(`/tourGuides/${user?.email}`);
@@ -14,7 +14,7 @@ const useIsTourGuide = () => {
     },
   });
 
-  return { isTourGuide };
+  return { isTourGuide, tourGuideLoading };
 };
 
 export default useIsTourGuide;
