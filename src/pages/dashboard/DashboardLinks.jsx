@@ -4,9 +4,10 @@ import { CgProfile } from "react-icons/cg";
 import { MdBookmarkAdded, MdBookmarkAdd } from "react-icons/md";
 import { MdAddCard } from "react-icons/md";
 import { FaUsersCog } from "react-icons/fa";
+import useAdmin from "../../hooks/useAdmin";
 
 const DashboardLinks = () => {
-  const isAdmin = true;
+  const { isAdmin } = useAdmin();
   const isTourGuide = true;
   return (
     <>
