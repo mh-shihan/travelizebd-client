@@ -10,7 +10,7 @@ const TouristStory = () => {
   const loadingAnimation = useLoadingAnimation();
   const [touristStories, isLoading] = useTouristStory();
   return (
-    <div className="pt-20">
+    <div data-aos="fade-left" className="pt-20">
       <SectionTitle
         heading="Happy Tourist"
         subheading="Read some"

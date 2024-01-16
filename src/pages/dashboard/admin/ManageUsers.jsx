@@ -71,7 +71,7 @@ const ManageUsers = () => {
     <div data-aos="fade-left" className="overflow-x-auto">
       <table className="table">
         {/* head */}
-        <thead>
+        <thead className="bg-[#f6f8f9]">
           <tr>
             <th>#</th>
             <th>Name</th>

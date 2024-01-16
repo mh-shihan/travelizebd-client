@@ -1,13 +1,24 @@
-import { Outlet } from "react-router-dom";
 import Navbar from "../pages/home/navbar/Navbar";
 import Footer from "../pages/home/footer/Footer";
 import useAuth from "../hooks/useAuth";
 import DashboardLinks from "../pages/dashboard/DashboardLinks";
 import AOS from "aos";
+import useAxiosSecure from "../hooks/useAxiosSecure";
+import { useQuery } from "@tanstack/react-query";
+import { Outlet } from "react-router-dom";
 
 const Dashboard = () => {
   const { user } = useAuth();
-  // ..
+  const axiosSecure = useAxiosSecure();
+  //   TODO: Your role related work hove to be finished
+  const { data: profileUser = {} } = useQuery({
+    queryKey: ["Profile user", user?.email],
+    queryFn: async () => {
+      const res = await axiosSecure.get(`/role?email=${user?.email}`);
+      return res.data;
+    },
+  });
+
   AOS.init();
   return (
     <div>
@@ -22,7 +33,9 @@ const Dashboard = () => {
             />
             <div>
               <h2 className="text-xl font-medium">{user?.displayName}</h2>
-              <p className="text-sm">Role</p>
+              <p className="text-sm">
+                {profileUser?.role ? profileUser?.role : "tourist"}
+              </p>
             </div>
           </div>
           <ul className="menu font-inter  text-base mt-2 font-light">
