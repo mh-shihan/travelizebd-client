@@ -4,11 +4,13 @@ import { TbCurrencyTaka } from "react-icons/tb";
 import useAxiosSecure from "../../../hooks/useAxiosSecure";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
+import useTourGuides from "../../../hooks/useTourGuides";
 
 const BookingForm = ({ viewPackage }) => {
   const { user } = useAuth();
   const axiosSecure = useAxiosSecure();
   const { title, price } = viewPackage;
+  const [tourGuideRoles] = useTourGuides();
   const navigate = useNavigate();
 
   const {
@@ -46,15 +48,6 @@ const BookingForm = ({ viewPackage }) => {
       });
     }
   };
-
-  const guideNames = [
-    "Alice Johnson",
-    "Bob Smith",
-    "Elena Rodriguez",
-    "Alice Johnson",
-    "Bob Smith",
-    "Elena Rodriguez",
-  ];
 
   return (
     <form
@@ -113,8 +106,8 @@ const BookingForm = ({ viewPackage }) => {
             className="select select-bordered w-full "
           >
             <option disabled>Chose your favorite one</option>
-            {guideNames.map((name, index) => (
-              <option key={index}>{name}</option>
+            {tourGuideRoles.map((tourGuide) => (
+              <option key={tourGuide._id}>{tourGuide.name}</option>
             ))}
           </select>
         </label>

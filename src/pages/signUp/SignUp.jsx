@@ -23,12 +23,9 @@ const SignUp = () => {
     const email = data?.email;
     const password = data?.password;
     const photo = data?.photo;
-    console.log(name, email, password);
 
     createUser(email, password)
       .then((res) => {
-        console.log(res.user);
-
         if (res?.user) {
           updateUser(name, photo).then(() => {
             const userInfo = {

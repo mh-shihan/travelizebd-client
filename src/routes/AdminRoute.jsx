@@ -16,7 +16,7 @@ const AdminRoute = ({ children }) => {
   if (loading === undefined) {
     return <Lottie animationData={loadingAnimation}></Lottie>;
   }
-  if (user && isAdmin) {
+  if (user && isAdmin?.admin) {
     return children;
   }
 
