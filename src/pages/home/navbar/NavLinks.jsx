@@ -28,26 +28,12 @@ const NavLinks = () => {
               viewTransitionName: isTransitioning ? "slide" : "",
             };
           }}
-          to="/community"
+          to="/allPackages"
         >
-          Community
+          Our Packages
         </NavLink>
       </li>
-      <li>
-        <NavLink
-          style={({ isActive, isTransitioning }) => {
-            return {
-              background: isActive ? "transparent" : "",
-              fontWeight: isActive ? "bold" : "",
-              color: isActive ? "#F7B801" : "white",
-              viewTransitionName: isTransitioning ? "slide" : "",
-            };
-          }}
-          to="/blogs"
-        >
-          Blogs
-        </NavLink>
-      </li>
+
       <li>
         <NavLink
           style={({ isActive, isTransitioning }) => {
