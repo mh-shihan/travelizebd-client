@@ -142,6 +142,22 @@ const DashboardLinks = () => {
                 return {
                   background: isActive ? "transparent" : "",
                   fontWeight: isActive ? "" : "",
+                  color: isActive ? "black" : "",
+                  viewTransitionName: isTransitioning ? "slide" : "",
+                };
+              }}
+              to="/dashboard"
+            >
+              <BiSolidDashboard />
+              Dashboard
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              style={({ isActive, isTransitioning }) => {
+                return {
+                  background: isActive ? "transparent" : "",
+                  fontWeight: isActive ? "" : "",
                   color: isActive ? "#F7B801" : "",
                   viewTransitionName: isTransitioning ? "slide" : "",
                 };

@@ -8,6 +8,7 @@ import Lottie from "lottie-react";
 import SocialLogin from "../../shared/socialLogin/SocialLogin";
 import useAxiosPublic from "../../hooks/useAxiosPublic";
 import { FaEye, FaEyeSlash } from "react-icons/fa6";
+import { Helmet } from "react-helmet-async";
 
 const SignUp = () => {
   const [errorMessage, setErrorMessage] = useState("");
@@ -59,6 +60,9 @@ const SignUp = () => {
 
   return (
     <div className="hero min-h-screen bg-base-200 max-w-7xl mx-auto px-1">
+      <Helmet>
+        <title>TravelizeBD | Register</title>
+      </Helmet>
       <div className="hero-content w-full flex-col lg:flex-row ">
         <div className="text-center w-1/2 ">
           <h1 className="text-5xl font-bold mb-6">Register now!</h1>

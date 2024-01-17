@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import SectionTitle from "../../components/Sectiontitle";
 import { CommentBoxTextarea } from "./CommentBoxTextarea";
 import TextBox from "./TextBox";
@@ -5,6 +6,9 @@ import TextBox from "./TextBox";
 const Contact = () => {
   return (
     <div data-aos="fade-left" className="max-w-7xl mx-auto px-1 pt-10">
+      <Helmet>
+        <title>TravelizeBD | Contact Us</title>
+      </Helmet>
       <SectionTitle
         heading={"Contact Us"}
         subheading="Feel free to contact"

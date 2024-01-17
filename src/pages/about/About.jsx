@@ -1,9 +1,13 @@
 import SectionTitle from "../../components/Sectiontitle";
 import AboutIconCollection from "./AboutIconCollection";
 import about from "../../assets/about/about.jpg";
+import { Helmet } from "react-helmet-async";
 const About = () => {
   return (
     <div className="pt-10 max-w-7xl mx-auto px-1">
+      <Helmet>
+        <title>TravelizeBD | About Us</title>
+      </Helmet>
       <SectionTitle
         heading="About Us"
         subheading="Read about us"

@@ -6,6 +6,7 @@ import AOS from "aos";
 import useAxiosSecure from "../hooks/useAxiosSecure";
 import { useQuery } from "@tanstack/react-query";
 import { Outlet } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const Dashboard = () => {
   const { user } = useAuth();
@@ -21,6 +22,9 @@ const Dashboard = () => {
   AOS.init();
   return (
     <div>
+      <Helmet>
+        <title>TravelizeBD | Dashboard</title>
+      </Helmet>
       <Navbar></Navbar>
       <div className="max-w-7xl mx-auto px-1  grid grid-cols-12  pt-24">
         <div className=" col-span-3 lg:col-span-3 min-h-screen pt-8 border-2 border-r-transparent border-base-300">
