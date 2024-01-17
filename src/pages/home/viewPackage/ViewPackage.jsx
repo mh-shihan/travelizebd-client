@@ -1,9 +1,9 @@
 import { useLoaderData } from "react-router-dom";
-import SectionTitle from "../../../components/SectionTitle";
 import PhotoAlbum from "react-photo-album";
 import ViewPackageCard from "./ViewPackageCard";
 import Accordion from "./Accordion";
 import BookingForm from "./BookingForm";
+import SectionTitle from "../../../components/Sectiontitle";
 
 const ViewPackage = () => {
   const viewPackage = useLoaderData();

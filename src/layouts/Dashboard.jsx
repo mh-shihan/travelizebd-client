@@ -10,7 +10,6 @@ import { Outlet } from "react-router-dom";
 const Dashboard = () => {
   const { user } = useAuth();
   const axiosSecure = useAxiosSecure();
-  //   TODO: Your role related work hove to be finished
   const { data: profileUser = {} } = useQuery({
     queryKey: ["Profile user", user?.email],
     queryFn: async () => {

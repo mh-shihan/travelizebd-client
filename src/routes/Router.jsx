@@ -22,6 +22,7 @@ import TourGuideRoute from "./TourGuideRoute";
 import MyAssignedTour from "../pages/dashboard/tourGuide/MyAssignedTour";
 import About from "../pages/about/About";
 import Contact from "../pages/contact/Contact";
+import TourGuideDetails from "../pages/home/tourismAndGuide/TourGuideDetails";
 
 export const router = createBrowserRouter([
   {
@@ -72,6 +73,12 @@ export const router = createBrowserRouter([
         element: <ViewPackage></ViewPackage>,
         loader: ({ params }) =>
           fetch(`http://localhost:5000/api/v1/viewPackages/${params.id}`),
+      },
+      {
+        path: "tourGuideDetails/:id",
+        element: <TourGuideDetails></TourGuideDetails>,
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/api/v1/tourGuideDetails/${params.id}`),
       },
     ],
   },

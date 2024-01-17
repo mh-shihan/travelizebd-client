@@ -1,7 +1,8 @@
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const TourGuideCard = ({ tourGuide }) => {
-  const { photo, name, skill } = tourGuide;
+  const { photo, name, skill, _id } = tourGuide;
 
   return (
     <div className="relative flex flex-col text-gray-700 bg-white shadow-md bg-clip-border rounded-xl hover:transition-all hover:scale-105">
@@ -30,9 +31,12 @@ const TourGuideCard = ({ tourGuide }) => {
       </div>
       <div className="mx-4 flex justify-center my-6">
         {/* TODO: handleDetails for tour guide details */}
-        <button className="btn btn-block btn-outline mx-4 border-yellow bg-yellow text-base-100">
-          Details
-        </button>
+        <Link to={`/tourGuideDetails/${_id}`}>
+          {" "}
+          <button className="btn btn-block btn-outline mx-4 border-yellow bg-yellow text-base-100">
+            Details
+          </button>
+        </Link>
       </div>
     </div>
   );
