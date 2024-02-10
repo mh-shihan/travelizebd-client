@@ -258,10 +258,14 @@ const Profile = () => {
                       </div>
                     </div>
                     <div className="flex justify-center gap-10">
-                      <button className="text-white py-2 px-5 rounded-sm bg-sky-500 hover:bg-sky-600">
+                      <button
+                        type="submit"
+                        className="text-white py-2 px-5 rounded-sm bg-sky-500 hover:bg-sky-600"
+                      >
                         Update
                       </button>
                       <button
+                        type="button"
                         className="text-white py-2 px-5 rounded-sm bg-red-500 hover:bg-red-600"
                         onClick={() => setHideForm(!hideForm)}
                       >

@@ -66,19 +66,25 @@ export const router = createBrowserRouter([
         path: "storyDetails/:id",
         element: <StoryDetails></StoryDetails>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/api/v1/storyDetails/${params.id}`),
+          fetch(
+            `https://travelizebd-server.vercel.app/api/v1/storyDetails/${params.id}`
+          ),
       },
       {
         path: "viewPackage/:id",
         element: <ViewPackage></ViewPackage>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/api/v1/viewPackages/${params.id}`),
+          fetch(
+            `https://travelizebd-server.vercel.app/api/v1/viewPackages/${params.id}`
+          ),
       },
       {
         path: "tourGuideDetails/:id",
         element: <TourGuideDetails></TourGuideDetails>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/api/v1/tourGuideDetails/${params.id}`),
+          fetch(
+            `https://travelizebd-server.vercel.app/api/v1/tourGuideDetails/${params.id}`
+          ),
       },
     ],
   },
