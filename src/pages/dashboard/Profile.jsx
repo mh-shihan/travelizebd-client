@@ -1,8 +1,26 @@
+import { useState } from "react";
 import useAuth from "../../hooks/useAuth";
 import "aos/dist/aos.css";
+import { useQuery } from "@tanstack/react-query";
+import useAxiosSecure from "../../hooks/useAxiosSecure";
 
 const Profile = () => {
+  const [hideForm, setHideForm] = useState(false);
   const { user } = useAuth();
+  const axiosSecure = useAxiosSecure();
+
+  const { data = {}, refetch } = useQuery({
+    queryKey: ["user", user?.email],
+    queryFn: async () => {
+      const res = await axiosSecure.get(`/user?${user?.email}`);
+      return res.data;
+    },
+  });
+  console.log(data);
+
+  const handleUpdateProfileInfo = (e) => {
+    e.preventDefault();
+  };
 
   return (
     <div data-aos="fade-left">
@@ -38,7 +56,7 @@ const Profile = () => {
               </div>
 
               {/* info */}
-              <div className="">
+              <div className={hideForm && "hidden"}>
                 <div className="text-gray-700 ">
                   <div className="grid md:grid-cols-2 text-sm">
                     <div className="">
@@ -80,9 +98,140 @@ const Profile = () => {
                       </div>
                     </div>
                   </div>
-                  <button className="block w-full text-blue-800 text-sm font-semibold rounded-lg hover:bg-gray-200 bg-gray-100 focus:outline-none focus:shadow-outline focus:bg-gray-100 hover:shadow-xs p-3 my-4">
+                  <button
+                    className="block w-full text-blue-800 text-sm font-semibold rounded-lg hover:bg-gray-200 bg-gray-100 focus:outline-none focus:shadow-outline focus:bg-gray-100 hover:shadow-xs p-3 my-4"
+                    onClick={() => setHideForm(!hideForm)}
+                  >
                     Edit Info
                   </button>
+                </div>
+              </div>
+              {/* update form */}
+              <div className="flex justify-center mt-4">
+                <div className={!hideForm && "hidden"}>
+                  <form
+                    className="w-full max-w-lg"
+                    onSubmit={handleUpdateProfileInfo}
+                  >
+                    <div className="flex flex-wrap -mx-3 mb-6">
+                      <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label
+                          className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                          htmlFor="grid-first-name"
+                        >
+                          Name
+                        </label>
+                        <input
+                          name="name"
+                          defaultValue={data.name}
+                          className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                          id="grid-first-name"
+                          type="text"
+                          placeholder="Enter Your Name"
+                        />
+                      </div>
+                      <div className="w-full md:w-1/2 px-3">
+                        <label
+                          className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                          htmlFor="grid-last-name"
+                        >
+                          Email
+                        </label>
+                        <input
+                          className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                          defaultValue={user.email}
+                          readOnly
+                          id="grid-last-name"
+                          type="text"
+                          placeholder="Doe"
+                        />
+                      </div>
+                      <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label
+                          className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                          htmlFor="grid-first-name"
+                        >
+                          Gender
+                        </label>
+                        <select
+                          name="gender"
+                          id=""
+                          className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                          type="text"
+                          placeholder=""
+                        >
+                          <option value="Male">Male</option>
+                          <option value="Female">Female</option>
+                          <option value="Other">Other</option>
+                        </select>
+                      </div>
+                      <div className="w-full md:w-1/2 px-3">
+                        <label
+                          className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                          htmlFor="grid-last-name"
+                        >
+                          Contact No.
+                        </label>
+                        <input
+                          defaultValue={
+                            data.contactNumber ? data.contactNumber : ""
+                          }
+                          className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                          name="contactNumber"
+                          id="grid-last-name"
+                          type="text"
+                          placeholder="Enter Your Contact Number"
+                        />
+                      </div>
+                      <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label
+                          className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                          htmlFor="grid-first-name"
+                        >
+                          Current Address
+                        </label>
+                        <input
+                          defaultValue={
+                            data.currentAddress ? data.currentAddress : ""
+                          }
+                          className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                          id="grid-first-name"
+                          name="currentAddress"
+                          type="text"
+                          placeholder="Enter Your Current Address"
+                        />
+                      </div>
+                      <div className="w-full md:w-1/2 px-3">
+                        <label
+                          className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                          htmlFor="grid-last-name"
+                        >
+                          Permanent Address
+                        </label>
+                        <input
+                          defaultValue={
+                            data.permanentAddress ? data.permanentAddress : ""
+                          }
+                          className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                          name="permanentAddress"
+                          id="grid-last-name"
+                          type="text"
+                          placeholder="Enter Your Permanent Address"
+                        />
+                      </div>
+                    </div>
+                    <div className="flex justify-center gap-10">
+                      <button className="text-white py-2 px-5 rounded-sm bg-sky-500 hover:bg-sky-600">
+                        Update
+                      </button>
+                      <button
+                        className="text-white py-2 px-5 rounded-sm bg-red-500 hover:bg-red-600"
+                        onClick={() => setHideForm(!hideForm)}
+                      >
+                        Cancel
+                      </button>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
