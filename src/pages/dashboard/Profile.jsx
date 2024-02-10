@@ -3,23 +3,59 @@ import useAuth from "../../hooks/useAuth";
 import "aos/dist/aos.css";
 import { useQuery } from "@tanstack/react-query";
 import useAxiosSecure from "../../hooks/useAxiosSecure";
+import Swal from "sweetalert2";
 
 const Profile = () => {
   const [hideForm, setHideForm] = useState(false);
-  const { user } = useAuth();
+  const { user, updateUser } = useAuth();
   const axiosSecure = useAxiosSecure();
 
   const { data = {}, refetch } = useQuery({
     queryKey: ["user", user?.email],
     queryFn: async () => {
-      const res = await axiosSecure.get(`/user?${user?.email}`);
+      const res = await axiosSecure.get(`/user?email=${user?.email}`);
       return res.data;
     },
   });
-  console.log(data);
 
-  const handleUpdateProfileInfo = (e) => {
+  const handleUpdateProfileInfo = async (e) => {
     e.preventDefault();
+    const form = e.target;
+    const name = form.name.value;
+    const gender = form.gender.value;
+    const contactNumber = form.contactNumber.value;
+    const currentAddress = form.currentAddress.value;
+    const permanentAddress = form.permanentAddress.value;
+
+    const updatedInfo = {
+      name,
+      gender,
+      currentAddress,
+      permanentAddress,
+      contactNumber,
+    };
+    const res = await axiosSecure.patch(
+      `/user?email=${user.email}`,
+      updatedInfo
+    );
+    if (res.data.modifiedCount > 0) {
+      updateUser(name).then(() => {
+        Swal.fire({
+          title: "Profile Info Updated",
+          icon: "success",
+        });
+        refetch();
+        setHideForm(!hideForm);
+      });
+    }
+    if (res.data.matchedCount > 0 && res.data.modifiedCount === 0) {
+      Swal.fire({
+        icon: "info",
+        title: "You haven't changed anything",
+        text: "To update the profile info you need to change al least one field",
+      });
+      setHideForm(!hideForm);
+    }
   };
 
   return (
@@ -70,13 +106,13 @@ const Profile = () => {
                     <div className="mt-4">
                       <div className="px-4 py-2 font-semibold">Gender</div>
                       <div className="px-4 py-2">
-                        {user?.gender ? user?.gender : "N/A"}
+                        {data?.gender ? data?.gender : "N/A"}
                       </div>
                     </div>
                     <div className="mt-4">
                       <div className="px-4 py-2 font-semibold">Contact No.</div>
                       <div className="px-4 py-2">
-                        {user?.contactNumber ? user?.contactNumber : "N/A"}
+                        {data?.contactNumber ? data?.contactNumber : "N/A"}
                       </div>
                     </div>
                     <div className="mt-4">
@@ -84,7 +120,7 @@ const Profile = () => {
                         Current Address
                       </div>
                       <div className="px-4 py-2">
-                        {user?.currentAddress ? user?.currentAddress : "N/A"}
+                        {data?.currentAddress ? data?.currentAddress : "N/A"}
                       </div>
                     </div>
                     <div className="mt-4">
@@ -92,20 +128,21 @@ const Profile = () => {
                         Permanent Address
                       </div>
                       <div className="px-4 py-2">
-                        {user?.permanentAddress
-                          ? user?.permanentAddress
+                        {data?.permanentAddress
+                          ? data?.permanentAddress
                           : "N/A"}
                       </div>
                     </div>
                   </div>
                   <button
-                    className="block w-full text-blue-800 text-sm font-semibold rounded-lg hover:bg-gray-200 bg-gray-100 focus:outline-none focus:shadow-outline focus:bg-gray-100 hover:shadow-xs p-3 my-4"
                     onClick={() => setHideForm(!hideForm)}
+                    className="block w-full text-blue-800 hover:text-blue-00 text-sm font-semibold rounded-lg hover:bg-base-300  focus:outline-none focus:shadow-outline focus:bg-base-100 hover:shadow-xs p-3 my-4"
                   >
                     Edit Info
                   </button>
                 </div>
               </div>
+
               {/* update form */}
               <div className="flex justify-center mt-4">
                 <div className={!hideForm && "hidden"}>
@@ -116,7 +153,7 @@ const Profile = () => {
                     <div className="flex flex-wrap -mx-3 mb-6">
                       <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                         <label
-                          className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                          className="block uppercase tracking-wide text-gray text-xs font-bold mb-2"
                           htmlFor="grid-first-name"
                         >
                           Name
@@ -124,7 +161,7 @@ const Profile = () => {
                         <input
                           name="name"
                           defaultValue={data.name}
-                          className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                          className="appearance-none block w-full bg-base-200 text-gray border border-base-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                           id="grid-first-name"
                           type="text"
                           placeholder="Enter Your Name"
@@ -132,13 +169,13 @@ const Profile = () => {
                       </div>
                       <div className="w-full md:w-1/2 px-3">
                         <label
-                          className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                          className="block uppercase tracking-wide text-gray text-xs font-bold mb-2"
                           htmlFor="grid-last-name"
                         >
                           Email
                         </label>
                         <input
-                          className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                          className="appearance-none block w-full bg-base-200 text-gray border border-base-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                           defaultValue={user.email}
                           readOnly
                           id="grid-last-name"
@@ -148,7 +185,7 @@ const Profile = () => {
                       </div>
                       <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                         <label
-                          className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                          className="block uppercase tracking-wide text-gray text-xs font-bold mb-2"
                           htmlFor="grid-first-name"
                         >
                           Gender
@@ -156,7 +193,7 @@ const Profile = () => {
                         <select
                           name="gender"
                           id=""
-                          className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                          className="appearance-none block w-full bg-base-200 text-gray border border-base-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                           type="text"
                           placeholder=""
                         >
@@ -167,7 +204,7 @@ const Profile = () => {
                       </div>
                       <div className="w-full md:w-1/2 px-3">
                         <label
-                          className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                          className="block uppercase tracking-wide text-gray text-xs font-bold mb-2"
                           htmlFor="grid-last-name"
                         >
                           Contact No.
@@ -176,16 +213,16 @@ const Profile = () => {
                           defaultValue={
                             data.contactNumber ? data.contactNumber : ""
                           }
-                          className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                          className="appearance-none block w-full bg-base-200 text-gray border border-base-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                           name="contactNumber"
                           id="grid-last-name"
-                          type="text"
+                          type="number"
                           placeholder="Enter Your Contact Number"
                         />
                       </div>
                       <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                         <label
-                          className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                          className="block uppercase tracking-wide text-gray text-xs font-bold mb-2"
                           htmlFor="grid-first-name"
                         >
                           Current Address
@@ -194,7 +231,7 @@ const Profile = () => {
                           defaultValue={
                             data.currentAddress ? data.currentAddress : ""
                           }
-                          className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                          className="appearance-none block w-full bg-base-200 text-gray border border-base-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                           id="grid-first-name"
                           name="currentAddress"
                           type="text"
@@ -203,7 +240,7 @@ const Profile = () => {
                       </div>
                       <div className="w-full md:w-1/2 px-3">
                         <label
-                          className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                          className="block uppercase tracking-wide text-gray text-xs font-bold mb-2"
                           htmlFor="grid-last-name"
                         >
                           Permanent Address
@@ -212,7 +249,7 @@ const Profile = () => {
                           defaultValue={
                             data.permanentAddress ? data.permanentAddress : ""
                           }
-                          className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                          className="appearance-none block w-full bg-base-200 text-gray border border-base-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                           name="permanentAddress"
                           id="grid-last-name"
                           type="text"

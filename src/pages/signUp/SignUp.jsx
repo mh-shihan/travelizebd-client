@@ -31,7 +31,7 @@ const SignUp = () => {
           updateUser(name, photo).then(() => {
             const userInfo = {
               name,
-              email,
+              photo,
             };
             axiosPublic.post("/users", userInfo).then((res) => {
               if (res.data.insertedId) {
